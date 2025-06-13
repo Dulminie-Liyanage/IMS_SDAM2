@@ -30,7 +30,7 @@
         {
             btnBack = new Button();
             btnSearch = new Button();
-            txtId = new TextBox();
+            txtsku = new TextBox();
             label2 = new Label();
             label1 = new Label();
             dgvSearchResults = new DataGridView();
@@ -50,6 +50,7 @@
             btnBack.TabIndex = 48;
             btnBack.Text = "Back";
             btnBack.UseVisualStyleBackColor = true;
+            btnBack.Click += btnBack_Click;
             // 
             // btnSearch
             // 
@@ -59,22 +60,23 @@
             btnSearch.TabIndex = 46;
             btnSearch.Text = "Search";
             btnSearch.UseVisualStyleBackColor = true;
+            btnSearch.Click += btnSearch_Click;
             // 
-            // txtId
+            // txtsku
             // 
-            txtId.Location = new Point(126, 87);
-            txtId.Name = "txtId";
-            txtId.Size = new Size(121, 27);
-            txtId.TabIndex = 45;
+            txtsku.Location = new Point(139, 88);
+            txtsku.Name = "txtsku";
+            txtsku.Size = new Size(121, 27);
+            txtsku.TabIndex = 45;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Location = new Point(12, 94);
             label2.Name = "label2";
-            label2.Size = new Size(103, 20);
+            label2.Size = new Size(111, 20);
             label2.TabIndex = 44;
-            label2.Text = "Search by ID : ";
+            label2.Text = "Search by SKU: ";
             // 
             // label1
             // 
@@ -91,11 +93,11 @@
             dgvSearchResults.BackgroundColor = SystemColors.Window;
             dgvSearchResults.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvSearchResults.Columns.AddRange(new DataGridViewColumn[] { Product_ID, Name, Quantity, Price, Category });
-            dgvSearchResults.Location = new Point(12, 148);
+            dgvSearchResults.Location = new Point(12, 141);
             dgvSearchResults.Name = "dgvSearchResults";
             dgvSearchResults.ReadOnly = true;
             dgvSearchResults.RowHeadersWidth = 51;
-            dgvSearchResults.Size = new Size(480, 79);
+            dgvSearchResults.Size = new Size(480, 80);
             dgvSearchResults.TabIndex = 49;
             // 
             // Product_ID
@@ -137,11 +139,11 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(504, 255);
+            ClientSize = new Size(508, 270);
             Controls.Add(dgvSearchResults);
             Controls.Add(btnBack);
             Controls.Add(btnSearch);
-            Controls.Add(txtId);
+            Controls.Add(txtsku);
             Controls.Add(label2);
             Controls.Add(label1);
             Text = "Search_Product";
@@ -155,7 +157,7 @@
         private Button btnBack;
         private Button btnClear;
         private Button btnSearch;
-        private TextBox txtId;
+        private TextBox txtsku;
         private Label label2;
         private Label label1;
         private DataGridView dgvSearchResults;

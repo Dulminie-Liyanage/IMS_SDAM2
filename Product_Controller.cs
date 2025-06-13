@@ -71,14 +71,16 @@ namespace IMS
                 return "Quantity and Price must be numbers!";
             }
 
-            string update = "UPDATE products SET name=@name, quantity=@qty, price=@price, category=@cat WHERE sku=@sku";
+            string query = "UPDATE products SET name=@name, quantity=@qty, price=@price, category=@cat WHERE sku=@sku";
             conn.Open();
-            MySqlCommand cmd = new MySqlCommand(update, conn);
+
+            MySqlCommand cmd = new MySqlCommand(query, conn);
             cmd.Parameters.AddWithValue("@sku", sku);
             cmd.Parameters.AddWithValue("@name", name);
             cmd.Parameters.AddWithValue("@qty", quantity);
             cmd.Parameters.AddWithValue("@price", price);
             cmd.Parameters.AddWithValue("@cat", category);
+
             int rows = cmd.ExecuteNonQuery();
             conn.Close();
 
@@ -88,19 +90,18 @@ namespace IMS
                 return "SKU not found!";
         }
 
-        ////Search Product
-        //public static DataTable Search_Product(string sku, string name, string quantity, string price, string category)
-        //{
-        //    string connStr = "server=127.0.0.1;uid=root;pwd=;database=inventory_db;";
-        //    MySqlConnection conn = new MySqlConnection(connStr);
+        //Search Product
+        public static DataTable SearchProduct(string keyword)
+        {
+            string query = "SELECT * FROM products WHERE sku LIKE @kw OR name LIKE @kw";
+            MySqlCommand cmd = new MySqlCommand(query, conn);
+            cmd.Parameters.AddWithValue("@kw", $"%{keyword}%");
 
-        //    string query = "SELECT * FROM products WHERE sku LIKE @kw OR name LIKE @kw";
-
-        //    MySqlCommand cmd = new MySqlCommand(query, conn);
-        //    cmd.Parameters.AddWithValue("@kw", $"%{keyword}%");
-        //}
-
-        //Delete Product
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
+        }
 
         public static string Delete_Product(string sku)
         {

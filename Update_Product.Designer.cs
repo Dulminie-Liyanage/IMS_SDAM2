@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             btnBack = new Button();
-            btnAdd = new Button();
+            btnUpdate = new Button();
             label7 = new Label();
             txtName = new TextBox();
             txtQuantity = new TextBox();
@@ -48,21 +48,23 @@
             // 
             // btnBack
             // 
-            btnBack.Location = new Point(317, 304);
+            btnBack.Location = new Point(265, 303);
             btnBack.Name = "btnBack";
             btnBack.Size = new Size(94, 29);
             btnBack.TabIndex = 39;
             btnBack.Text = "Back";
             btnBack.UseVisualStyleBackColor = true;
+            btnBack.Click += btnBack_Click;
             // 
-            // btnAdd
+            // btnUpdate
             // 
-            btnAdd.Location = new Point(116, 304);
-            btnAdd.Name = "btnAdd";
-            btnAdd.Size = new Size(94, 29);
-            btnAdd.TabIndex = 37;
-            btnAdd.Text = "Update";
-            btnAdd.UseVisualStyleBackColor = true;
+            btnUpdate.Location = new Point(317, 69);
+            btnUpdate.Name = "btnUpdate";
+            btnUpdate.Size = new Size(94, 29);
+            btnUpdate.TabIndex = 37;
+            btnUpdate.Text = "Update";
+            btnUpdate.UseVisualStyleBackColor = true;
+            btnUpdate.Click += btnAdd_Click;
             // 
             // label7
             // 
@@ -95,9 +97,9 @@
             // 
             // txtsku
             // 
-            txtsku.Location = new Point(126, 67);
+            txtsku.Location = new Point(65, 72);
             txtsku.Name = "txtsku";
-            txtsku.Size = new Size(170, 27);
+            txtsku.Size = new Size(129, 27);
             txtsku.TabIndex = 32;
             // 
             // label6
@@ -130,7 +132,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(43, 74);
+            label2.Location = new Point(10, 75);
             label2.Name = "label2";
             label2.Size = new Size(47, 20);
             label2.TabIndex = 28;
@@ -163,16 +165,17 @@
             // 
             // btnClear
             // 
-            btnClear.Location = new Point(216, 304);
+            btnClear.Location = new Point(150, 303);
             btnClear.Name = "btnClear";
             btnClear.Size = new Size(80, 29);
             btnClear.TabIndex = 38;
             btnClear.Text = "Clear";
             btnClear.UseVisualStyleBackColor = true;
+            btnClear.Click += btnClear_Click;
             // 
             // btnLoad
             // 
-            btnLoad.Location = new Point(36, 304);
+            btnLoad.Location = new Point(224, 71);
             btnLoad.Name = "btnLoad";
             btnLoad.Size = new Size(74, 29);
             btnLoad.TabIndex = 42;
@@ -190,7 +193,7 @@
             Controls.Add(label5);
             Controls.Add(btnBack);
             Controls.Add(btnClear);
-            Controls.Add(btnAdd);
+            Controls.Add(btnUpdate);
             Controls.Add(label7);
             Controls.Add(txtName);
             Controls.Add(txtQuantity);
@@ -210,7 +213,7 @@
         #endregion
 
         private Button btnBack;
-        private Button btnAdd;
+        private Button btnUpdate;
         private Label label7;
         private TextBox txtName;
         private TextBox txtQuantity;
