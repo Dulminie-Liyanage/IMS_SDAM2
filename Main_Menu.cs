@@ -19,6 +19,7 @@ namespace IMS
 
         private void linkProductMng_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            this.Hide();
             PrductManagement productManagement_Form = new PrductManagement();
             productManagement_Form.Show();//Open a new add product form
         }

@@ -28,29 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            txtId = new TextBox();
+            txtsuk = new TextBox();
             label2 = new Label();
             label1 = new Label();
             btnBack = new Button();
-            btnClear = new Button();
             btnDelete = new Button();
             SuspendLayout();
             // 
-            // txtId
+            // txtsuk
             // 
-            txtId.Location = new Point(162, 85);
-            txtId.Name = "txtId";
-            txtId.Size = new Size(170, 27);
-            txtId.TabIndex = 35;
+            txtsuk.Location = new Point(162, 85);
+            txtsuk.Name = "txtsuk";
+            txtsuk.Size = new Size(170, 27);
+            txtsuk.TabIndex = 35;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Location = new Point(48, 92);
             label2.Name = "label2";
-            label2.Size = new Size(90, 20);
+            label2.Size = new Size(102, 20);
             label2.TabIndex = 34;
-            label2.Text = "Product ID : ";
+            label2.Text = "Product SUK : ";
             // 
             // label1
             // 
@@ -63,40 +62,32 @@
             // 
             // btnBack
             // 
-            btnBack.Location = new Point(268, 142);
+            btnBack.Location = new Point(238, 142);
             btnBack.Name = "btnBack";
             btnBack.Size = new Size(94, 29);
             btnBack.TabIndex = 42;
             btnBack.Text = "Back";
             btnBack.UseVisualStyleBackColor = true;
-            // 
-            // btnClear
-            // 
-            btnClear.Location = new Point(151, 142);
-            btnClear.Name = "btnClear";
-            btnClear.Size = new Size(94, 29);
-            btnClear.TabIndex = 41;
-            btnClear.Text = "Clear";
-            btnClear.UseVisualStyleBackColor = true;
+            btnBack.Click += btnBack_Click;
             // 
             // btnDelete
             // 
-            btnDelete.Location = new Point(32, 142);
+            btnDelete.Location = new Point(48, 142);
             btnDelete.Name = "btnDelete";
             btnDelete.Size = new Size(94, 29);
             btnDelete.TabIndex = 40;
             btnDelete.Text = "Delete";
             btnDelete.UseVisualStyleBackColor = true;
+            btnDelete.Click += btnDelete_Click;
             // 
             // Delete_Product
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(410, 205);
+            ClientSize = new Size(377, 205);
             Controls.Add(btnBack);
-            Controls.Add(btnClear);
             Controls.Add(btnDelete);
-            Controls.Add(txtId);
+            Controls.Add(txtsuk);
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "Delete_Product";
@@ -107,11 +98,10 @@
 
         #endregion
 
-        private TextBox txtId;
+        private TextBox txtsuk;
         private Label label2;
         private Label label1;
         private Button btnBack;
-        private Button btnClear;
         private Button btnDelete;
     }
 }

@@ -2,6 +2,7 @@
 using Org.BouncyCastle.Crypto.Utilities;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,6 +11,7 @@ namespace IMS
 {
     class Product_Controller
     {
+        //Define the connection string to the MySQL database
         static string connStr = "server=127.0.0.1;uid=root;pwd=;database=inventory_db;";
         static MySqlConnection conn = new MySqlConnection(connStr);
 
@@ -86,10 +88,45 @@ namespace IMS
                 return "SKU not found!";
         }
 
-        //Search Product
-        public static string Search_Product(string sku, string name, string quantity, string price, string category)
-        {
+        ////Search Product
+        //public static DataTable Search_Product(string sku, string name, string quantity, string price, string category)
+        //{
+        //    string connStr = "server=127.0.0.1;uid=root;pwd=;database=inventory_db;";
+        //    MySqlConnection conn = new MySqlConnection(connStr);
 
+        //    string query = "SELECT * FROM products WHERE sku LIKE @kw OR name LIKE @kw";
+
+        //    MySqlCommand cmd = new MySqlCommand(query, conn);
+        //    cmd.Parameters.AddWithValue("@kw", $"%{keyword}%");
+        //}
+
+        //Delete Product
+
+        public static string Delete_Product(string sku)
+        {
+            //check if sku is empty
+            if (sku == "")
+                return "Please enter the SKU to delete.";
+
+            //SQL query to delete a product with given sku
+            string deleteQuery = "DELETE FROM products WHERE sku = @sku";
+
+            conn.Open();
+            MySqlCommand cmd = new MySqlCommand(deleteQuery, conn);
+            cmd.Parameters.AddWithValue("@sku",sku);
+
+            int rows = cmd.ExecuteNonQuery();//execute the delete cmd and get number of affeted rows
+
+            conn.Close();
+
+            if (rows > 0)
+            {
+                return "Product deleted successfully!";
+            }
+            else
+            {
+                return "SKU not found. Nothing deleted.";
+            }
         }
     }
 }

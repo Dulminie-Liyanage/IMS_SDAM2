@@ -26,27 +26,30 @@ namespace IMS
 
         private void linkUpdatePdt_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            this.Hide();
             Update_Product update_Product_Form = new Update_Product();
             update_Product_Form.Show();
         }
 
         private void linkDelPdt_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            this.Hide();
             Delete_Product delete_Product_Form = new Delete_Product();
             delete_Product_Form.Show();
         }
 
         private void linkSearchPdt_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            this.Hide();
             Search_Product search_Product_Form = new Search_Product();
             search_Product_Form.Show();
         }
 
         private void btnBacktoMenu_Click(object sender, EventArgs e)
         {
+            this.Hide();
             Main_Menu main_Menu = new Main_Menu();
             main_Menu.Show();
-            this.Close();
         }
     }
 }
