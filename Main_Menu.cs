@@ -30,5 +30,12 @@ namespace IMS
             loging_form loging_Form = new loging_form();
             loging_Form.Show();
         }
+
+        private void linkStockAlert_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            low_stock low_Stock = new low_stock();
+            low_Stock.Show();
+        }
     }
 }

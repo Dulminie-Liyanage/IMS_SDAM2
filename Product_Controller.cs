@@ -157,5 +157,18 @@ namespace IMS
                 return "SKU not found. Nothing deleted.";
             }
         }
+
+        public static DataTable GetLowStockProducts(int threshold)
+        {
+            string query = "SELECT sku, name, quantity FROM products WHERE quantity < @limit";
+            MySqlCommand cmd = new MySqlCommand(query, conn);
+            cmd.Parameters.AddWithValue("@limit", threshold);
+
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+            DataTable table = new DataTable();
+            da.Fill(table);
+
+            return table;
+        }
     }
 }

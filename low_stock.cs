@@ -21,22 +21,28 @@ namespace IMS
         {
 
         }
-       
+        private void LowStockForm_Load(object sender, EventArgs e)
+        {
+            numLimit.Value = 5; // Default value
+            btnCheck.PerformClick(); // Automatically load data
+        }
+
         private void subbtn_Click(object sender, EventArgs e)
         {
-            // Get data from textboxes and DateTimePicker
-            string sku = skuTextBox.Text;
-            string status = statusTextBox.Text;
-            DateTime selectedDate = dateTimePicker.Value;
+            int limit = (int)numLimit.Value;
 
-            // Here you can add functionality to store or process the data, such as saving to a database
-            MessageBox.Show($"SKU: {sku}\nStatus: {status}\nDate: {selectedDate.ToShortDateString()}",
-                "Low Stock Alert Submitted", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            DataTable result = Product_Controller.GetLowStockProducts(limit);
 
-            // Optionally, clear the fields after submission
-            skuTextBox.Clear();
-            statusTextBox.Clear();
-            dateTimePicker.Value = DateTime.Now; // Reset the date picker to the current date
+            if (result.Rows.Count > 0)
+            {
+                dgvStock.DataSource = result;
+                dgvStock.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            }
+            else
+            {
+                MessageBox.Show("All products are in stock.");
+                dgvStock.DataSource = null;
+            }
         }
-    }
+}
 }
