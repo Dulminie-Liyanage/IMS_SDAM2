@@ -21,16 +21,31 @@ namespace IMS
             if (sku == "" || name == "" || quantity == "" || price == "" || category == "")
                 return "Please fill all the fields!"; //check if all the field are filled
 
+
+            // Check if quantity is a valid number
             try
             {
-                Convert.ToInt32(quantity);
-                Convert.ToDouble(price);
+                int qty = Convert.ToInt32(quantity);
+                if (qty <= 0)
+                    return "Quantity cannot be negative.";
             }
             catch
             {
-                //check if the qun and price is valid inputs
-                return "Quantity must be a number and price mush be a valid amount!";
+                return "Quantity must be a whole number.";
             }
+
+            // Check if price is a valid number
+            try
+            {
+                double pr = Convert.ToDouble(price);
+                if (pr <= 0)
+                    return "Price cannot be negative.";
+            }
+            catch
+            {
+                return "Price must be a number.";
+            }
+
             string checkQuery = "SELECT COUNT(*) FROM products WHERE sku = @sku";
             conn.Open();
             MySqlCommand checkCmd = new MySqlCommand(checkQuery, conn);
@@ -63,13 +78,26 @@ namespace IMS
 
             try
             {
-                Convert.ToInt32(quantity);
-                Convert.ToDouble(price);
+                int qty = Convert.ToInt32(quantity);
+                if (qty <= 0)
+                    return "Quantity cannot be negative.";
             }
             catch
             {
-                return "Quantity and Price must be numbers!";
+                return "Quantity must be a whole number.";
             }
+
+            try
+            {
+                double pr = Convert.ToDouble(price);
+                if (pr <= 0)
+                    return "Price cannot be negative.";
+            }
+            catch
+            {
+                return "Price must be a number.";
+            }
+
 
             string query = "UPDATE products SET name=@name, quantity=@qty, price=@price, category=@cat WHERE sku=@sku";
             conn.Open();
@@ -128,6 +156,19 @@ namespace IMS
             {
                 return "SKU not found. Nothing deleted.";
             }
+        }
+
+        public static DataTable GetLowStockProducts(int threshold)
+        {
+            string query = "SELECT sku, name, quantity FROM products WHERE quantity < @limit";
+            MySqlCommand cmd = new MySqlCommand(query, conn);
+            cmd.Parameters.AddWithValue("@limit", threshold);
+
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+            DataTable table = new DataTable();
+            da.Fill(table);
+
+            return table;
         }
     }
 }

@@ -59,6 +59,7 @@
             btnExit.Text = "Exit";
             btnExit.TextImageRelation = TextImageRelation.TextAboveImage;
             btnExit.UseVisualStyleBackColor = true;
+            btnExit.Click += btnExit_Click;
             // 
             // linkProductMng
             // 
@@ -80,6 +81,7 @@
             linkSupplierMng.TabIndex = 10;
             linkSupplierMng.TabStop = true;
             linkSupplierMng.Text = "Supplier Management";
+            linkSupplierMng.LinkClicked += linkSupplierMng_LinkClicked;
             // 
             // linkOrderMng
             // 
@@ -106,13 +108,14 @@
             // 
             linkStockAlert.AutoEllipsis = true;
             linkStockAlert.AutoSize = true;
-            linkStockAlert.Location = new Point(154, 250);
+            linkStockAlert.Location = new Point(135, 250);
             linkStockAlert.Name = "linkStockAlert";
-            linkStockAlert.Size = new Size(81, 20);
+            linkStockAlert.Size = new Size(112, 20);
             linkStockAlert.TabIndex = 13;
             linkStockAlert.TabStop = true;
-            linkStockAlert.Text = "Stock Alert";
+            linkStockAlert.Text = "Low Stock Alert";
             linkStockAlert.TextAlign = ContentAlignment.MiddleCenter;
+            linkStockAlert.LinkClicked += linkStockAlert_LinkClicked;
             // 
             // linkReports
             // 

@@ -28,121 +28,118 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
-            skuTextBox = new TextBox();
-            statusTextBox = new TextBox();
-            dateTimePicker = new DateTimePicker();
-            subbtn = new Button();
+            lblTitle = new Label();
+            btnCheck = new Button();
+            numLimit = new NumericUpDown();
+            dgvStock = new DataGridView();
+            SKU = new DataGridViewTextBoxColumn();
+            Name = new DataGridViewTextBoxColumn();
+            Quantity = new DataGridViewTextBoxColumn();
+            lblLimit = new Label();
+            ((System.ComponentModel.ISupportInitialize)numLimit).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvStock).BeginInit();
             SuspendLayout();
             // 
-            // label1
+            // lblTitle
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 13F, FontStyle.Bold | FontStyle.Underline);
-            label1.Location = new Point(266, 49);
-            label1.Name = "label1";
-            label1.Size = new Size(185, 30);
-            label1.TabIndex = 0;
-            label1.Text = "Low Stock Alerts";
+            lblTitle.AutoSize = true;
+            lblTitle.Font = new Font("Segoe UI", 13F, FontStyle.Bold | FontStyle.Underline);
+            lblTitle.Location = new Point(177, 56);
+            lblTitle.Name = "lblTitle";
+            lblTitle.Size = new Size(175, 30);
+            lblTitle.TabIndex = 0;
+            lblTitle.Text = "Low Stock Alert";
             // 
-            // label2
+            // btnCheck
             // 
-            label2.AutoSize = true;
-            label2.BackColor = SystemColors.ActiveCaption;
-            label2.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label2.Location = new Point(155, 170);
-            label2.Name = "label2";
-            label2.Size = new Size(94, 20);
-            label2.TabIndex = 1;
-            label2.Text = "SKU           :  ";
-            label2.Click += label2_Click;
+            btnCheck.BackColor = SystemColors.Info;
+            btnCheck.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            btnCheck.Location = new Point(422, 115);
+            btnCheck.Name = "btnCheck";
+            btnCheck.Size = new Size(94, 29);
+            btnCheck.TabIndex = 7;
+            btnCheck.Text = "Check";
+            btnCheck.UseVisualStyleBackColor = false;
+            btnCheck.Click += subbtn_Click;
             // 
-            // label3
+            // numLimit
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label3.Location = new Point(155, 231);
-            label3.Name = "label3";
-            label3.Size = new Size(85, 20);
-            label3.TabIndex = 2;
-            label3.Text = "Status       :";
+            numLimit.Location = new Point(341, 115);
+            numLimit.Name = "numLimit";
+            numLimit.Size = new Size(52, 27);
+            numLimit.TabIndex = 8;
             // 
-            // label4
+            // dgvStock
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label4.Location = new Point(155, 283);
-            label4.Name = "label4";
-            label4.Size = new Size(82, 20);
-            label4.TabIndex = 3;
-            label4.Text = "Date         :";
+            dgvStock.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvStock.Columns.AddRange(new DataGridViewColumn[] { SKU, Name, Quantity });
+            dgvStock.Location = new Point(26, 176);
+            dgvStock.Name = "dgvStock";
+            dgvStock.RowHeadersWidth = 51;
+            dgvStock.Size = new Size(426, 80);
+            dgvStock.TabIndex = 9;
             // 
-            // skuTextBox
+            // SKU
             // 
-            skuTextBox.Location = new Point(299, 163);
-            skuTextBox.Name = "skuTextBox";
-            skuTextBox.Size = new Size(250, 27);
-            skuTextBox.TabIndex = 4;
+            SKU.HeaderText = "SKU";
+            SKU.MinimumWidth = 6;
+            SKU.Name = "SKU";
+            SKU.ReadOnly = true;
+            SKU.Width = 125;
             // 
-            // statusTextBox
+            // Name
             // 
-            statusTextBox.Location = new Point(299, 228);
-            statusTextBox.Name = "statusTextBox";
-            statusTextBox.Size = new Size(250, 27);
-            statusTextBox.TabIndex = 5;
+            Name.HeaderText = "Name";
+            Name.MinimumWidth = 6;
+            Name.Name = "Name";
+            Name.ReadOnly = true;
+            Name.Width = 125;
             // 
-            // dateTimePicker
+            // Quantity
             // 
-            dateTimePicker.Location = new Point(299, 283);
-            dateTimePicker.Name = "dateTimePicker";
-            dateTimePicker.Size = new Size(250, 27);
-            dateTimePicker.TabIndex = 6;
+            Quantity.HeaderText = "Quantity";
+            Quantity.MinimumWidth = 6;
+            Quantity.Name = "Quantity";
+            Quantity.ReadOnly = true;
+            Quantity.Width = 125;
             // 
-            // subbtn
+            // lblLimit
             // 
-            subbtn.BackColor = SystemColors.Info;
-            subbtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            subbtn.Location = new Point(446, 352);
-            subbtn.Name = "subbtn";
-            subbtn.Size = new Size(94, 29);
-            subbtn.TabIndex = 7;
-            subbtn.Text = "SUBMIT";
-            subbtn.UseVisualStyleBackColor = false;
-            subbtn.Click += subbtn_Click;
+            lblLimit.AutoSize = true;
+            lblLimit.Location = new Point(52, 115);
+            lblLimit.Name = "lblLimit";
+            lblLimit.Size = new Size(261, 20);
+            lblLimit.TabIndex = 10;
+            lblLimit.Text = "Show products with quantity less than:";
             // 
             // low_stock
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
-            ClientSize = new Size(800, 450);
-            Controls.Add(subbtn);
-            Controls.Add(dateTimePicker);
-            Controls.Add(statusTextBox);
-            Controls.Add(skuTextBox);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(label1);
+            ClientSize = new Size(551, 311);
+            Controls.Add(lblLimit);
+            Controls.Add(dgvStock);
+            Controls.Add(numLimit);
+            Controls.Add(btnCheck);
+            Controls.Add(lblTitle);
             Cursor = Cursors.Hand;
-            Name = "low_stock";
             Text = "low_stock";
+            ((System.ComponentModel.ISupportInitialize)numLimit).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvStock).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private Label label1;
-        private Label label2;
-        private Label label3;
-        private Label label4;
-        private TextBox skuTextBox;
-        private TextBox statusTextBox;
-        private DateTimePicker dateTimePicker;
-        private Button subbtn;
+        private Label lblTitle;
+        private Button btnCheck;
+        private NumericUpDown numLimit;
+        private DataGridView dgvStock;
+        private DataGridViewTextBoxColumn SKU;
+        private DataGridViewTextBoxColumn Name;
+        private DataGridViewTextBoxColumn Quantity;
+        private Label lblLimit;
     }
 }
