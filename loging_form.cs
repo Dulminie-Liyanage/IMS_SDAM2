@@ -50,6 +50,9 @@ namespace IMS
             if (usercount > 0)
             {
                 MessageBox.Show("Loging Successfull!");
+                this.Hide();
+                Main_Menu main_Menu = new Main_Menu();
+                main_Menu.Show();
 
             }
             else

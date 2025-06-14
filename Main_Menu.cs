@@ -24,5 +24,11 @@ namespace IMS
             productManagement_Form.Show();//Open a new add product form
         }
 
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            loging_form loging_Form = new loging_form();
+            loging_Form.Show();
+        }
     }
 }

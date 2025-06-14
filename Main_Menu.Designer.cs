@@ -59,6 +59,7 @@
             btnExit.Text = "Exit";
             btnExit.TextImageRelation = TextImageRelation.TextAboveImage;
             btnExit.UseVisualStyleBackColor = true;
+            btnExit.Click += btnExit_Click;
             // 
             // linkProductMng
             // 
