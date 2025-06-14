@@ -81,6 +81,7 @@
             linkSupplierMng.TabIndex = 10;
             linkSupplierMng.TabStop = true;
             linkSupplierMng.Text = "Supplier Management";
+            linkSupplierMng.LinkClicked += linkSupplierMng_LinkClicked;
             // 
             // linkOrderMng
             // 

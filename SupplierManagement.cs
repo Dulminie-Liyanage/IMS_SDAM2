@@ -49,6 +49,11 @@ namespace IMS
         {
 
         }
+
+        private void SupplierManagement_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }

@@ -37,5 +37,12 @@ namespace IMS
             low_stock low_Stock = new low_stock();
             low_Stock.Show();
         }
+
+        private void linkSupplierMng_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            SupplierManagement supplierManagement = new SupplierManagement();
+            supplierManagement.Show();
+        }
     }
 }

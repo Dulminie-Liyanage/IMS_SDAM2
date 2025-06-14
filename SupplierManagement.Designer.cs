@@ -39,18 +39,20 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(193, 47);
+            label1.Location = new Point(94, 28);
+            label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(234, 25);
+            label1.Size = new Size(194, 20);
             label1.TabIndex = 0;
             label1.Text = "Supplier Management Form";
             // 
             // updatelink
             // 
             updatelink.AutoSize = true;
-            updatelink.Location = new Point(241, 243);
+            updatelink.Location = new Point(133, 184);
+            updatelink.Margin = new Padding(2, 0, 2, 0);
             updatelink.Name = "updatelink";
-            updatelink.Size = new Size(140, 25);
+            updatelink.Size = new Size(117, 20);
             updatelink.TabIndex = 2;
             updatelink.TabStop = true;
             updatelink.Text = "Update Supplier";
@@ -59,9 +61,10 @@
             // deletelink
             // 
             deletelink.AutoSize = true;
-            deletelink.Location = new Point(241, 327);
+            deletelink.Location = new Point(133, 252);
+            deletelink.Margin = new Padding(2, 0, 2, 0);
             deletelink.Name = "deletelink";
-            deletelink.Size = new Size(132, 25);
+            deletelink.Size = new Size(112, 20);
             deletelink.TabIndex = 3;
             deletelink.TabStop = true;
             deletelink.Text = "Delete Supplier";
@@ -70,9 +73,10 @@
             // searchlink
             // 
             searchlink.AutoSize = true;
-            searchlink.Location = new Point(241, 409);
+            searchlink.Location = new Point(133, 317);
+            searchlink.Margin = new Padding(2, 0, 2, 0);
             searchlink.Name = "searchlink";
-            searchlink.Size = new Size(134, 25);
+            searchlink.Size = new Size(112, 20);
             searchlink.TabIndex = 4;
             searchlink.TabStop = true;
             searchlink.Text = "Search Supplier";
@@ -80,9 +84,10 @@
             // 
             // button1
             // 
-            button1.Location = new Point(203, 494);
+            button1.Location = new Point(102, 385);
+            button1.Margin = new Padding(2, 2, 2, 2);
             button1.Name = "button1";
-            button1.Size = new Size(224, 34);
+            button1.Size = new Size(179, 27);
             button1.TabIndex = 5;
             button1.Text = "Back to Main Menu";
             button1.UseVisualStyleBackColor = true;
@@ -91,9 +96,10 @@
             // addsupplierlink
             // 
             addsupplierlink.AutoSize = true;
-            addsupplierlink.Location = new Point(241, 159);
+            addsupplierlink.Location = new Point(133, 117);
+            addsupplierlink.Margin = new Padding(2, 0, 2, 0);
             addsupplierlink.Name = "addsupplierlink";
-            addsupplierlink.Size = new Size(116, 25);
+            addsupplierlink.Size = new Size(96, 20);
             addsupplierlink.TabIndex = 6;
             addsupplierlink.TabStop = true;
             addsupplierlink.Text = "Add Supplier";
@@ -101,17 +107,19 @@
             // 
             // SupplierManagement
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(694, 634);
+            ClientSize = new Size(382, 448);
             Controls.Add(addsupplierlink);
             Controls.Add(button1);
             Controls.Add(searchlink);
             Controls.Add(deletelink);
             Controls.Add(updatelink);
             Controls.Add(label1);
+            Margin = new Padding(2, 2, 2, 2);
             Name = "SupplierManagement";
             Text = "SupplierManagementForm1";
+            Load += SupplierManagement_Load;
             ResumeLayout(false);
             PerformLayout();
         }
