@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace IMS
 {
-    public partial class Search_form: Form
+    public partial class Search_form : Form
     {
         public Search_form()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

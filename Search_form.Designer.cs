@@ -44,42 +44,48 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(361, 70);
+            label1.Location = new Point(316, 39);
+            label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(134, 25);
+            label1.Size = new Size(112, 20);
             label1.TabIndex = 0;
             label1.Text = "Search Supplier";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(69, 180);
+            label2.Location = new Point(51, 97);
+            label2.Margin = new Padding(2, 0, 2, 0);
             label2.Name = "label2";
-            label2.Size = new Size(191, 25);
+            label2.Size = new Size(158, 20);
             label2.TabIndex = 1;
             label2.Text = "Search by Supplier ID :";
             // 
             // searchtextBox
             // 
-            searchtextBox.Location = new Point(341, 177);
+            searchtextBox.Location = new Point(251, 92);
+            searchtextBox.Margin = new Padding(2, 2, 2, 2);
             searchtextBox.Name = "searchtextBox";
-            searchtextBox.Size = new Size(257, 31);
+            searchtextBox.Size = new Size(206, 27);
             searchtextBox.TabIndex = 2;
             // 
             // button1
             // 
-            button1.Location = new Point(641, 175);
+            button1.Location = new Point(491, 90);
+            button1.Margin = new Padding(2, 2, 2, 2);
             button1.Name = "button1";
-            button1.Size = new Size(112, 34);
+            button1.Size = new Size(90, 27);
             button1.TabIndex = 3;
             button1.Text = "Search";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
-            button2.Location = new Point(791, 175);
+            button2.Location = new Point(611, 90);
+            button2.Margin = new Padding(2, 2, 2, 2);
             button2.Name = "button2";
-            button2.Size = new Size(112, 34);
+            button2.Size = new Size(90, 27);
             button2.TabIndex = 4;
             button2.Text = "Back";
             button2.UseVisualStyleBackColor = true;
@@ -88,10 +94,11 @@
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { SupplierID, Name, ContactInfo, LinkedProduct });
-            dataGridView1.Location = new Point(137, 332);
+            dataGridView1.Location = new Point(33, 156);
+            dataGridView1.Margin = new Padding(2, 2, 2, 2);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.Size = new Size(663, 116);
+            dataGridView1.Size = new Size(663, 81);
             dataGridView1.TabIndex = 5;
             // 
             // SupplierID
@@ -124,16 +131,17 @@
             // 
             // Search_form
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1032, 566);
+            ClientSize = new Size(729, 272);
             Controls.Add(dataGridView1);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(searchtextBox);
             Controls.Add(label2);
             Controls.Add(label1);
-            
+            Margin = new Padding(2, 2, 2, 2);
+            Name = "Search_form";
             Text = "delete_form";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);

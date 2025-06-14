@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace IMS
 {
-    public partial class Delete: Form
+    public partial class Delete_Supplier: Form
     {
-        public Delete()
+        public Delete_Supplier()
         {
             InitializeComponent();
         }

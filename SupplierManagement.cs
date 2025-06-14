@@ -20,21 +20,15 @@ namespace IMS
         private void addsupplierlink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Hide();
-            Addform addform = new Addform();
+            Add_Supplier addform = new Add_Supplier();
             addform.Show();
         }
 
-        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            this.Hide();
-            Update_Form update_Form = new Update_Form();
-            update_Form.Show();
-        }
 
         private void deletelink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Hide();
-            Delete delete = new Delete();
+            Delete_Supplier delete = new Delete_Supplier();
             delete.Show();
         }
 
@@ -47,12 +41,21 @@ namespace IMS
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Main_Menu main_Menu = new Main_Menu();
+            main_Menu.Show();
         }
 
         private void SupplierManagement_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void updatelink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            Update_Form update_Form = new Update_Form();
+            update_Form.Show();
         }
     }
 
