@@ -1,6 +1,6 @@
 ﻿namespace IMS
 {
-    partial class Search_form
+    partial class Search_Supplier
     {
         /// <summary>
         /// Required designer variable.
@@ -31,8 +31,8 @@
             label1 = new Label();
             label2 = new Label();
             searchtextBox = new TextBox();
-            button1 = new Button();
-            button2 = new Button();
+            searchbtn = new Button();
+            backbtn = new Button();
             dataGridView1 = new DataGridView();
             SupplierID = new DataGridViewTextBoxColumn();
             Name = new DataGridViewTextBoxColumn();
@@ -64,38 +64,39 @@
             // searchtextBox
             // 
             searchtextBox.Location = new Point(251, 92);
-            searchtextBox.Margin = new Padding(2, 2, 2, 2);
+            searchtextBox.Margin = new Padding(2);
             searchtextBox.Name = "searchtextBox";
             searchtextBox.Size = new Size(206, 27);
             searchtextBox.TabIndex = 2;
             // 
-            // button1
+            // searchbtn
             // 
-            button1.Location = new Point(491, 90);
-            button1.Margin = new Padding(2, 2, 2, 2);
-            button1.Name = "button1";
-            button1.Size = new Size(90, 27);
-            button1.TabIndex = 3;
-            button1.Text = "Search";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            searchbtn.Location = new Point(491, 90);
+            searchbtn.Margin = new Padding(2);
+            searchbtn.Name = "searchbtn";
+            searchbtn.Size = new Size(90, 27);
+            searchbtn.TabIndex = 3;
+            searchbtn.Text = "Search";
+            searchbtn.UseVisualStyleBackColor = true;
+            searchbtn.Click += button1_Click;
             // 
-            // button2
+            // backbtn
             // 
-            button2.Location = new Point(611, 90);
-            button2.Margin = new Padding(2, 2, 2, 2);
-            button2.Name = "button2";
-            button2.Size = new Size(90, 27);
-            button2.TabIndex = 4;
-            button2.Text = "Back";
-            button2.UseVisualStyleBackColor = true;
+            backbtn.Location = new Point(611, 90);
+            backbtn.Margin = new Padding(2);
+            backbtn.Name = "backbtn";
+            backbtn.Size = new Size(90, 27);
+            backbtn.TabIndex = 4;
+            backbtn.Text = "Back";
+            backbtn.UseVisualStyleBackColor = true;
+            backbtn.Click += backbtn_Click;
             // 
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { SupplierID, Name, ContactInfo, LinkedProduct });
             dataGridView1.Location = new Point(33, 156);
-            dataGridView1.Margin = new Padding(2, 2, 2, 2);
+            dataGridView1.Margin = new Padding(2);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 62;
             dataGridView1.Size = new Size(663, 81);
@@ -135,13 +136,12 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(729, 272);
             Controls.Add(dataGridView1);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(backbtn);
+            Controls.Add(searchbtn);
             Controls.Add(searchtextBox);
             Controls.Add(label2);
             Controls.Add(label1);
-            Margin = new Padding(2, 2, 2, 2);
-            Name = "Search_form";
+            Margin = new Padding(2);
             Text = "delete_form";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
@@ -153,8 +153,8 @@
         private Label label1;
         private Label label2;
         private TextBox searchtextBox;
-        private Button button1;
-        private Button button2;
+        private Button searchbtn;
+        private Button backbtn;
         private DataGridView dataGridView1;
         private DataGridViewTextBoxColumn SupplierID;
         private DataGridViewTextBoxColumn Name;

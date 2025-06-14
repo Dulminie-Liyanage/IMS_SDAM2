@@ -35,7 +35,7 @@ namespace IMS
         private void searchlink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Hide();
-            Search_form search_Form = new Search_form();
+            Search_Supplier search_Form = new Search_Supplier();
             search_Form.Show();
         }
 
@@ -54,7 +54,7 @@ namespace IMS
         private void updatelink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Hide();
-            Update_Form update_Form = new Update_Form();
+            Update_Supplier update_Form = new Update_Supplier();
             update_Form.Show();
         }
     }

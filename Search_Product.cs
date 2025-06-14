@@ -23,7 +23,7 @@ namespace IMS
 
             if (keyword == "")
             {
-                MessageBox.Show("Please enter SKU or product name to search.");
+                MessageBox.Show("Please enter SKU.");
                 return;
             }
 
