@@ -12,7 +12,7 @@
             // see https://aka.ms/applicationconfiguration.
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Main_Menu()); 
+            Application.Run(new loging_form()); 
         }
     }
 }
