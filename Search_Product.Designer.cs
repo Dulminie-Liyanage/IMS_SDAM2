@@ -44,10 +44,11 @@
             // 
             // btnBack
             // 
-            btnBack.Location = new Point(801, 164);
+            btnBack.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnBack.Location = new Point(725, 164);
             btnBack.Margin = new Padding(7, 6, 7, 6);
             btnBack.Name = "btnBack";
-            btnBack.Size = new Size(201, 55);
+            btnBack.Size = new Size(138, 55);
             btnBack.TabIndex = 48;
             btnBack.Text = "Back";
             btnBack.UseVisualStyleBackColor = true;
@@ -55,10 +56,11 @@
             // 
             // btnSearch
             // 
-            btnSearch.Location = new Point(588, 166);
+            btnSearch.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnSearch.Location = new Point(526, 164);
             btnSearch.Margin = new Padding(7, 6, 7, 6);
             btnSearch.Name = "btnSearch";
-            btnSearch.Size = new Size(201, 55);
+            btnSearch.Size = new Size(154, 55);
             btnSearch.TabIndex = 46;
             btnSearch.Text = "Search";
             btnSearch.UseVisualStyleBackColor = true;
@@ -66,7 +68,7 @@
             // 
             // txtsku
             // 
-            txtsku.Location = new Point(296, 167);
+            txtsku.Location = new Point(230, 169);
             txtsku.Margin = new Padding(7, 6, 7, 6);
             txtsku.Name = "txtsku";
             txtsku.Size = new Size(252, 45);
@@ -75,21 +77,22 @@
             // label2
             // 
             label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.Location = new Point(26, 179);
             label2.Margin = new Padding(7, 0, 7, 0);
             label2.Name = "label2";
-            label2.Size = new Size(222, 38);
+            label2.Size = new Size(174, 30);
             label2.TabIndex = 44;
             label2.Text = "Search by SKU: ";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(267, 28);
+            label1.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(309, 36);
             label1.Margin = new Padding(7, 0, 7, 0);
             label1.Name = "label1";
-            label1.Size = new Size(247, 45);
+            label1.Size = new Size(215, 38);
             label1.TabIndex = 43;
             label1.Text = "Search Product";
             // 
@@ -99,12 +102,12 @@
             dgvSearchResults.BackgroundColor = SystemColors.Window;
             dgvSearchResults.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvSearchResults.Columns.AddRange(new DataGridViewColumn[] { Product_ID, Name, Quantity, Price, Category });
-            dgvSearchResults.Location = new Point(26, 334);
+            dgvSearchResults.Location = new Point(16, 307);
             dgvSearchResults.Margin = new Padding(7, 6, 7, 6);
             dgvSearchResults.Name = "dgvSearchResults";
             dgvSearchResults.ReadOnly = true;
             dgvSearchResults.RowHeadersWidth = 51;
-            dgvSearchResults.Size = new Size(1020, 84);
+            dgvSearchResults.Size = new Size(1017, 84);
             dgvSearchResults.TabIndex = 49;
             // 
             // Product_ID
@@ -147,7 +150,7 @@
             AutoScaleDimensions = new SizeF(17F, 38F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
-            ClientSize = new Size(1080, 514);
+            ClientSize = new Size(1060, 480);
             Controls.Add(dgvSearchResults);
             Controls.Add(btnBack);
             Controls.Add(btnSearch);
@@ -156,6 +159,7 @@
             Controls.Add(label1);
             Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Margin = new Padding(7, 6, 7, 6);
+            Name = "Search_Product";
             Text = "Search_Product";
             Load += Search_Product_Load;
             ((System.ComponentModel.ISupportInitialize)dgvSearchResults).EndInit();

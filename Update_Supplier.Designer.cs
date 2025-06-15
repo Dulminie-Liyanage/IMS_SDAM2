@@ -46,82 +46,83 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(293, 26);
+            label1.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(272, 24);
             label1.Name = "label1";
-            label1.Size = new Size(263, 45);
+            label1.Size = new Size(229, 38);
             label1.TabIndex = 0;
             label1.Text = "Update Supplier";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(48, 147);
+            label2.Location = new Point(45, 138);
             label2.Name = "label2";
-            label2.Size = new Size(156, 32);
+            label2.Size = new Size(140, 30);
             label2.TabIndex = 1;
             label2.Text = "Supplier ID :";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(147, 251);
+            label3.Location = new Point(136, 235);
             label3.Name = "label3";
-            label3.Size = new Size(95, 32);
+            label3.Size = new Size(86, 30);
             label3.TabIndex = 2;
             label3.Text = "Name :";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(147, 340);
+            label4.Location = new Point(136, 319);
             label4.Name = "label4";
-            label4.Size = new Size(170, 32);
+            label4.Size = new Size(153, 30);
             label4.TabIndex = 3;
             label4.Text = "Contact Info :";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(147, 424);
+            label5.Location = new Point(136, 398);
             label5.Name = "label5";
-            label5.Size = new Size(254, 32);
+            label5.Size = new Size(230, 30);
             label5.TabIndex = 4;
             label5.Text = "Linked Product SKU :";
             // 
             // textid
             // 
-            textid.Location = new Point(211, 142);
+            textid.Location = new Point(196, 133);
             textid.Name = "textid";
-            textid.Size = new Size(256, 39);
+            textid.Size = new Size(238, 37);
             textid.TabIndex = 5;
             // 
             // txtname
             // 
-            txtname.Location = new Point(395, 246);
+            txtname.Location = new Point(367, 231);
             txtname.Name = "txtname";
-            txtname.Size = new Size(325, 39);
+            txtname.Size = new Size(302, 37);
             txtname.TabIndex = 6;
             // 
             // textcontact
             // 
-            textcontact.Location = new Point(395, 335);
+            textcontact.Location = new Point(367, 314);
             textcontact.Name = "textcontact";
-            textcontact.Size = new Size(325, 39);
+            textcontact.Size = new Size(302, 37);
             textcontact.TabIndex = 7;
             // 
             // txtproduct
             // 
-            txtproduct.Location = new Point(395, 421);
+            txtproduct.Location = new Point(367, 395);
             txtproduct.Name = "txtproduct";
-            txtproduct.Size = new Size(325, 39);
+            txtproduct.Size = new Size(302, 37);
             txtproduct.TabIndex = 8;
             // 
             // Updatebtn
             // 
-            Updatebtn.Location = new Point(685, 142);
+            Updatebtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Updatebtn.Location = new Point(636, 133);
             Updatebtn.Name = "Updatebtn";
-            Updatebtn.Size = new Size(157, 44);
+            Updatebtn.Size = new Size(146, 41);
             Updatebtn.TabIndex = 9;
             Updatebtn.Text = "Update";
             Updatebtn.UseVisualStyleBackColor = true;
@@ -129,9 +130,10 @@
             // 
             // clearbtn
             // 
-            clearbtn.Location = new Point(175, 540);
+            clearbtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            clearbtn.Location = new Point(162, 506);
             clearbtn.Name = "clearbtn";
-            clearbtn.Size = new Size(157, 44);
+            clearbtn.Size = new Size(146, 41);
             clearbtn.TabIndex = 10;
             clearbtn.Text = "Clear";
             clearbtn.UseVisualStyleBackColor = true;
@@ -139,9 +141,10 @@
             // 
             // backbtn
             // 
-            backbtn.Location = new Point(518, 540);
+            backbtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            backbtn.Location = new Point(481, 506);
             backbtn.Name = "backbtn";
-            backbtn.Size = new Size(157, 44);
+            backbtn.Size = new Size(146, 41);
             backbtn.TabIndex = 11;
             backbtn.Text = "Back";
             backbtn.UseVisualStyleBackColor = true;
@@ -149,9 +152,10 @@
             // 
             // loadbtn
             // 
-            loadbtn.Location = new Point(501, 142);
+            loadbtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            loadbtn.Location = new Point(465, 133);
             loadbtn.Name = "loadbtn";
-            loadbtn.Size = new Size(157, 44);
+            loadbtn.Size = new Size(146, 41);
             loadbtn.TabIndex = 12;
             loadbtn.Text = "Load";
             loadbtn.UseVisualStyleBackColor = true;
@@ -159,10 +163,10 @@
             // 
             // Update_Supplier
             // 
-            AutoScaleDimensions = new SizeF(14F, 32F);
+            AutoScaleDimensions = new SizeF(13F, 30F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
-            ClientSize = new Size(861, 652);
+            ClientSize = new Size(800, 611);
             Controls.Add(loadbtn);
             Controls.Add(backbtn);
             Controls.Add(clearbtn);
@@ -176,7 +180,7 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
-            Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Name = "Update_Supplier";
             Text = "Update_Form";
             ResumeLayout(false);

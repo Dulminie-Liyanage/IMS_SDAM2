@@ -44,27 +44,28 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.Location = new Point(409, 31);
             label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(253, 45);
+            label1.Size = new Size(221, 38);
             label1.TabIndex = 0;
             label1.Text = "Search Supplier";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(90, 155);
+            label2.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Location = new Point(45, 156);
             label2.Margin = new Padding(2, 0, 2, 0);
             label2.Name = "label2";
-            label2.Size = new Size(273, 32);
+            label2.Size = new Size(247, 30);
             label2.TabIndex = 1;
             label2.Text = "Search by Supplier ID :";
             // 
             // searchtextBox
             // 
-            searchtextBox.Location = new Point(440, 147);
+            searchtextBox.Location = new Point(321, 151);
             searchtextBox.Margin = new Padding(2, 3, 2, 3);
             searchtextBox.Name = "searchtextBox";
             searchtextBox.Size = new Size(356, 39);
@@ -72,10 +73,10 @@
             // 
             // searchbtn
             // 
-            searchbtn.Location = new Point(860, 143);
+            searchbtn.Location = new Point(735, 148);
             searchbtn.Margin = new Padding(2, 3, 2, 3);
             searchbtn.Name = "searchbtn";
-            searchbtn.Size = new Size(156, 44);
+            searchbtn.Size = new Size(132, 44);
             searchbtn.TabIndex = 3;
             searchbtn.Text = "Search";
             searchbtn.UseVisualStyleBackColor = true;
@@ -83,10 +84,10 @@
             // 
             // backbtn
             // 
-            backbtn.Location = new Point(1070, 143);
+            backbtn.Location = new Point(914, 148);
             backbtn.Margin = new Padding(2, 3, 2, 3);
             backbtn.Name = "backbtn";
-            backbtn.Size = new Size(156, 44);
+            backbtn.Size = new Size(139, 44);
             backbtn.TabIndex = 4;
             backbtn.Text = "Back";
             backbtn.UseVisualStyleBackColor = true;
@@ -96,7 +97,7 @@
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { SupplierID, Name, ContactInfo, LinkedProduct });
-            dataGridView1.Location = new Point(345, 258);
+            dataGridView1.Location = new Point(224, 258);
             dataGridView1.Margin = new Padding(2, 3, 2, 3);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 62;
@@ -136,7 +137,7 @@
             AutoScaleDimensions = new SizeF(14F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
-            ClientSize = new Size(1276, 435);
+            ClientSize = new Size(1181, 435);
             Controls.Add(dataGridView1);
             Controls.Add(backbtn);
             Controls.Add(searchbtn);
@@ -145,6 +146,7 @@
             Controls.Add(label1);
             Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Margin = new Padding(2, 3, 2, 3);
+            Name = "Search_Supplier";
             Text = "delete_form";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);

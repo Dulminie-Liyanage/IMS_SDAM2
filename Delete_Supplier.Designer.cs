@@ -48,17 +48,19 @@
             // label2
             // 
             label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.Location = new Point(99, 230);
             label2.Name = "label2";
-            label2.Size = new Size(180, 38);
+            label2.Size = new Size(140, 30);
             label2.TabIndex = 1;
             label2.Text = "Supplier ID :";
             // 
             // delbtn
             // 
+            delbtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             delbtn.Location = new Point(99, 336);
             delbtn.Name = "delbtn";
-            delbtn.Size = new Size(190, 52);
+            delbtn.Size = new Size(140, 52);
             delbtn.TabIndex = 3;
             delbtn.Text = "Delete";
             delbtn.UseVisualStyleBackColor = true;
@@ -66,9 +68,10 @@
             // 
             // clearbtn
             // 
-            clearbtn.Location = new Point(366, 336);
+            clearbtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            clearbtn.Location = new Point(303, 336);
             clearbtn.Name = "clearbtn";
-            clearbtn.Size = new Size(190, 52);
+            clearbtn.Size = new Size(133, 52);
             clearbtn.TabIndex = 4;
             clearbtn.Text = "Clear";
             clearbtn.UseVisualStyleBackColor = true;
@@ -76,9 +79,10 @@
             // 
             // backbtn
             // 
-            backbtn.Location = new Point(615, 336);
+            backbtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            backbtn.Location = new Point(571, 336);
             backbtn.Name = "backbtn";
-            backbtn.Size = new Size(190, 52);
+            backbtn.Size = new Size(150, 52);
             backbtn.TabIndex = 5;
             backbtn.Text = "Back";
             backbtn.UseVisualStyleBackColor = true;
@@ -86,7 +90,7 @@
             // 
             // idtxt
             // 
-            idtxt.Location = new Point(440, 230);
+            idtxt.Location = new Point(292, 220);
             idtxt.Margin = new Padding(7, 6, 7, 6);
             idtxt.Name = "idtxt";
             idtxt.Size = new Size(325, 45);
@@ -97,7 +101,7 @@
             AutoScaleDimensions = new SizeF(17F, 38F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
-            ClientSize = new Size(870, 462);
+            ClientSize = new Size(817, 462);
             Controls.Add(idtxt);
             Controls.Add(backbtn);
             Controls.Add(clearbtn);

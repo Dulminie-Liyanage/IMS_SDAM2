@@ -112,40 +112,45 @@
             // label6
             // 
             label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label6.Location = new Point(113, 387);
             label6.Margin = new Padding(6, 0, 6, 0);
             label6.Name = "label6";
-            label6.Size = new Size(132, 32);
+            label6.Size = new Size(121, 30);
             label6.TabIndex = 31;
             label6.Text = "Category :";
             // 
             // label4
             // 
             label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label4.Location = new Point(113, 266);
             label4.Margin = new Padding(6, 0, 6, 0);
             label4.Name = "label4";
-            label4.Size = new Size(127, 32);
+            label4.Size = new Size(116, 30);
             label4.TabIndex = 30;
             label4.Text = "Quantity :";
             // 
             // label3
             // 
             label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.Location = new Point(113, 198);
             label3.Margin = new Padding(6, 0, 6, 0);
             label3.Name = "label3";
-            label3.Size = new Size(102, 32);
+            label3.Size = new Size(92, 30);
             label3.TabIndex = 29;
             label3.Text = "Name : ";
             // 
             // label2
             // 
             label2.AutoSize = true;
+            label2.FlatStyle = FlatStyle.System;
+            label2.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.Location = new Point(17, 120);
             label2.Margin = new Padding(6, 0, 6, 0);
             label2.Name = "label2";
-            label2.Size = new Size(81, 32);
+            label2.Size = new Size(73, 30);
             label2.TabIndex = 28;
             label2.Text = "SKU : ";
             // 
@@ -171,16 +176,17 @@
             // label5
             // 
             label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label5.Location = new Point(113, 321);
             label5.Margin = new Padding(6, 0, 6, 0);
             label5.Name = "label5";
-            label5.Size = new Size(85, 32);
+            label5.Size = new Size(77, 30);
             label5.TabIndex = 40;
             label5.Text = "Price :";
             // 
             // btnClear
             // 
-            btnClear.Location = new Point(263, 485);
+            btnClear.Location = new Point(229, 485);
             btnClear.Margin = new Padding(6, 5, 6, 5);
             btnClear.Name = "btnClear";
             btnClear.Size = new Size(140, 46);

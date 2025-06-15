@@ -49,21 +49,22 @@
             // UpdateOrderLabel
             // 
             UpdateOrderLabel.AutoSize = true;
-            UpdateOrderLabel.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            UpdateOrderLabel.Location = new Point(370, 20);
+            UpdateOrderLabel.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            UpdateOrderLabel.Location = new Point(271, 18);
             UpdateOrderLabel.Margin = new Padding(4, 0, 4, 0);
             UpdateOrderLabel.Name = "UpdateOrderLabel";
-            UpdateOrderLabel.Size = new Size(225, 45);
+            UpdateOrderLabel.Size = new Size(195, 38);
             UpdateOrderLabel.TabIndex = 0;
             UpdateOrderLabel.Text = "Update Order";
             // 
             // SKU
             // 
             SKU.AutoSize = true;
+            SKU.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
             SKU.Location = new Point(48, 146);
             SKU.Margin = new Padding(4, 0, 4, 0);
             SKU.Name = "SKU";
-            SKU.Size = new Size(74, 32);
+            SKU.Size = new Size(67, 30);
             SKU.TabIndex = 1;
             SKU.Text = "SKU :";
             SKU.Click += SKU_Click;
@@ -79,40 +80,44 @@
             // Productlabel
             // 
             Productlabel.AutoSize = true;
+            Productlabel.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Productlabel.Location = new Point(39, 221);
             Productlabel.Margin = new Padding(4, 0, 4, 0);
             Productlabel.Name = "Productlabel";
-            Productlabel.Size = new Size(119, 32);
+            Productlabel.Size = new Size(108, 30);
             Productlabel.TabIndex = 3;
             Productlabel.Text = "Product :";
             // 
             // Supplier
             // 
             Supplier.AutoSize = true;
+            Supplier.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Supplier.Location = new Point(39, 297);
             Supplier.Margin = new Padding(4, 0, 4, 0);
             Supplier.Name = "Supplier";
-            Supplier.Size = new Size(123, 32);
+            Supplier.Size = new Size(111, 30);
             Supplier.TabIndex = 4;
             Supplier.Text = "Supplier :";
             // 
             // Quantity
             // 
             Quantity.AutoSize = true;
+            Quantity.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Quantity.Location = new Point(39, 383);
             Quantity.Margin = new Padding(4, 0, 4, 0);
             Quantity.Name = "Quantity";
-            Quantity.Size = new Size(127, 32);
+            Quantity.Size = new Size(116, 30);
             Quantity.TabIndex = 5;
             Quantity.Text = "Quantity :";
             // 
             // Status
             // 
             Status.AutoSize = true;
+            Status.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Status.Location = new Point(39, 457);
             Status.Margin = new Padding(4, 0, 4, 0);
             Status.Name = "Status";
-            Status.Size = new Size(97, 32);
+            Status.Size = new Size(89, 30);
             Status.TabIndex = 6;
             Status.Text = "Status :";
             // 
@@ -153,7 +158,7 @@
             // 
             // ClearBtn
             // 
-            ClearBtn.Location = new Point(354, 682);
+            ClearBtn.Location = new Point(282, 682);
             ClearBtn.Margin = new Padding(4, 4, 4, 4);
             ClearBtn.Name = "ClearBtn";
             ClearBtn.Size = new Size(157, 44);
@@ -164,7 +169,7 @@
             // 
             // BackBtn
             // 
-            BackBtn.Location = new Point(676, 682);
+            BackBtn.Location = new Point(555, 682);
             BackBtn.Margin = new Padding(4, 4, 4, 4);
             BackBtn.Name = "BackBtn";
             BackBtn.Size = new Size(157, 44);
@@ -184,19 +189,20 @@
             // Datelabel
             // 
             Datelabel.AutoSize = true;
+            Datelabel.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Datelabel.Location = new Point(48, 554);
             Datelabel.Margin = new Padding(4, 0, 4, 0);
             Datelabel.Name = "Datelabel";
-            Datelabel.Size = new Size(81, 32);
+            Datelabel.Size = new Size(74, 30);
             Datelabel.TabIndex = 15;
             Datelabel.Text = "Date :";
             // 
             // dateTimePicker
             // 
-            dateTimePicker.Location = new Point(216, 554);
+            dateTimePicker.Location = new Point(201, 554);
             dateTimePicker.Margin = new Padding(4, 4, 4, 4);
             dateTimePicker.Name = "dateTimePicker";
-            dateTimePicker.Size = new Size(418, 39);
+            dateTimePicker.Size = new Size(417, 39);
             dateTimePicker.TabIndex = 16;
             // 
             // Update_Order
@@ -204,7 +210,7 @@
             AutoScaleDimensions = new SizeF(14F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
-            ClientSize = new Size(977, 782);
+            ClientSize = new Size(819, 782);
             Controls.Add(dateTimePicker);
             Controls.Add(Datelabel);
             Controls.Add(StatustextBox);

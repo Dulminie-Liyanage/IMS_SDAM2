@@ -38,25 +38,28 @@
             // 
             // usernameTextBox
             // 
-            usernameTextBox.Location = new Point(121, 83);
+            usernameTextBox.Location = new Point(151, 109);
+            usernameTextBox.Margin = new Padding(4, 4, 4, 4);
             usernameTextBox.Name = "usernameTextBox";
-            usernameTextBox.Size = new Size(125, 27);
+            usernameTextBox.Size = new Size(168, 31);
             usernameTextBox.TabIndex = 0;
             usernameTextBox.TextChanged += usernameTextBox_TextChanged;
             // 
             // passwordTextBox
             // 
-            passwordTextBox.Location = new Point(121, 139);
+            passwordTextBox.Location = new Point(151, 179);
+            passwordTextBox.Margin = new Padding(4, 4, 4, 4);
             passwordTextBox.Name = "passwordTextBox";
-            passwordTextBox.Size = new Size(125, 27);
+            passwordTextBox.Size = new Size(168, 31);
             passwordTextBox.TabIndex = 1;
             // 
             // submitbtn
             // 
-            submitbtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            submitbtn.Location = new Point(85, 210);
+            submitbtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            submitbtn.Location = new Point(106, 262);
+            submitbtn.Margin = new Padding(4, 4, 4, 4);
             submitbtn.Name = "submitbtn";
-            submitbtn.Size = new Size(94, 29);
+            submitbtn.Size = new Size(118, 45);
             submitbtn.TabIndex = 2;
             submitbtn.Text = "Login";
             submitbtn.UseVisualStyleBackColor = true;
@@ -65,43 +68,49 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(17, 86);
+            label1.Font = new Font("Segoe UI", 11F);
+            label1.Location = new Point(21, 108);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(75, 20);
+            label1.Size = new Size(111, 30);
             label1.TabIndex = 3;
             label1.Text = "Username";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(17, 142);
+            label2.Font = new Font("Segoe UI", 11F);
+            label2.Location = new Point(21, 178);
+            label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(70, 20);
+            label2.Size = new Size(103, 30);
             label2.TabIndex = 4;
             label2.Text = "Password";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
-            label3.Location = new Point(70, 23);
+            label3.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            label3.Location = new Point(73, 31);
+            label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
-            label3.Size = new Size(165, 30);
+            label3.Size = new Size(211, 38);
             label3.TabIndex = 5;
             label3.Text = "LOGING FORM";
             // 
             // loging_form
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
-            ClientSize = new Size(280, 283);
+            ClientSize = new Size(350, 354);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(submitbtn);
             Controls.Add(passwordTextBox);
             Controls.Add(usernameTextBox);
+            Margin = new Padding(4, 4, 4, 4);
             Name = "loging_form";
             Text = "loging_form";
             Load += loging_form_Load;

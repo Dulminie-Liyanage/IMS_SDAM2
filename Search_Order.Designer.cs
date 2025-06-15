@@ -45,11 +45,11 @@
             // SearchOrder
             // 
             SearchOrder.AutoSize = true;
-            SearchOrder.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            SearchOrder.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
             SearchOrder.Location = new Point(419, 31);
             SearchOrder.Margin = new Padding(4, 0, 4, 0);
             SearchOrder.Name = "SearchOrder";
-            SearchOrder.Size = new Size(215, 45);
+            SearchOrder.Size = new Size(187, 38);
             SearchOrder.TabIndex = 0;
             SearchOrder.Text = "Search Order";
             SearchOrder.Click += SearchOrder_Click;
@@ -57,16 +57,17 @@
             // OrderSKU
             // 
             OrderSKU.AutoSize = true;
+            OrderSKU.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
             OrderSKU.Location = new Point(59, 154);
             OrderSKU.Margin = new Padding(4, 0, 4, 0);
             OrderSKU.Name = "OrderSKU";
-            OrderSKU.Size = new Size(264, 32);
+            OrderSKU.Size = new Size(241, 30);
             OrderSKU.TabIndex = 1;
             OrderSKU.Text = "Search by Order SKU :";
             // 
             // SKUtextBox
             // 
-            SKUtextBox.Location = new Point(364, 146);
+            SKUtextBox.Location = new Point(321, 149);
             SKUtextBox.Margin = new Padding(4, 4, 4, 4);
             SKUtextBox.Name = "SKUtextBox";
             SKUtextBox.Size = new Size(368, 39);
@@ -74,7 +75,7 @@
             // 
             // SearchBtn
             // 
-            SearchBtn.Location = new Point(785, 142);
+            SearchBtn.Location = new Point(725, 146);
             SearchBtn.Margin = new Padding(4, 4, 4, 4);
             SearchBtn.Name = "SearchBtn";
             SearchBtn.Size = new Size(157, 44);
@@ -85,7 +86,7 @@
             // 
             // BackBtn
             // 
-            BackBtn.Location = new Point(969, 142);
+            BackBtn.Location = new Point(912, 146);
             BackBtn.Margin = new Padding(4, 4, 4, 4);
             BackBtn.Name = "BackBtn";
             BackBtn.Size = new Size(157, 44);
@@ -145,7 +146,7 @@
             AutoScaleDimensions = new SizeF(14F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
-            ClientSize = new Size(1187, 451);
+            ClientSize = new Size(1155, 451);
             Controls.Add(dataGridView1);
             Controls.Add(BackBtn);
             Controls.Add(SearchBtn);

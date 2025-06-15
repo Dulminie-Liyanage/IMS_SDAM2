@@ -45,7 +45,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(530, 78);
+            label1.Location = new Point(358, 51);
             label1.Name = "label1";
             label1.Size = new Size(188, 38);
             label1.TabIndex = 0;
@@ -54,44 +54,49 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(240, 204);
+            label2.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Location = new Point(115, 209);
             label2.Name = "label2";
-            label2.Size = new Size(180, 38);
+            label2.Size = new Size(140, 30);
             label2.TabIndex = 1;
             label2.Text = "Supplier ID :";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(240, 301);
+            label3.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.Location = new Point(115, 305);
             label3.Name = "label3";
-            label3.Size = new Size(111, 38);
+            label3.Size = new Size(86, 30);
             label3.TabIndex = 2;
             label3.Text = "Name :";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(240, 407);
+            label4.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.Location = new Point(115, 401);
             label4.Name = "label4";
-            label4.Size = new Size(196, 38);
+            label4.Size = new Size(153, 30);
             label4.TabIndex = 3;
             label4.Text = "Contact Info :";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(240, 523);
+            label5.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.Location = new Point(115, 518);
             label5.Name = "label5";
-            label5.Size = new Size(297, 38);
+            label5.Size = new Size(234, 30);
             label5.TabIndex = 4;
             label5.Text = "Linked Products SKU:";
             // 
             // Add
             // 
-            Add.Location = new Point(167, 716);
+            Add.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Add.Location = new Point(115, 716);
             Add.Name = "Add";
-            Add.Size = new Size(190, 52);
+            Add.Size = new Size(122, 52);
             Add.TabIndex = 9;
             Add.Text = "Add";
             Add.UseVisualStyleBackColor = true;
@@ -99,9 +104,10 @@
             // 
             // button6
             // 
-            button6.Location = new Point(442, 716);
+            button6.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button6.Location = new Point(358, 716);
             button6.Name = "button6";
-            button6.Size = new Size(190, 52);
+            button6.Size = new Size(114, 52);
             button6.TabIndex = 10;
             button6.Text = "Clear";
             button6.UseVisualStyleBackColor = true;
@@ -109,9 +115,10 @@
             // 
             // button7
             // 
-            button7.Location = new Point(835, 716);
+            button7.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button7.Location = new Point(667, 716);
             button7.Name = "button7";
-            button7.Size = new Size(190, 52);
+            button7.Size = new Size(118, 52);
             button7.TabIndex = 11;
             button7.Text = "Back";
             button7.UseVisualStyleBackColor = true;
@@ -119,14 +126,14 @@
             // 
             // idtextBox
             // 
-            idtextBox.Location = new Point(592, 199);
+            idtextBox.Location = new Point(424, 209);
             idtextBox.Name = "idtextBox";
             idtextBox.Size = new Size(361, 45);
             idtextBox.TabIndex = 12;
             // 
             // nametextBox
             // 
-            nametextBox.Location = new Point(592, 295);
+            nametextBox.Location = new Point(424, 305);
             nametextBox.Name = "nametextBox";
             nametextBox.Size = new Size(361, 45);
             nametextBox.TabIndex = 13;
@@ -134,14 +141,14 @@
             // 
             // contacttextBox
             // 
-            contacttextBox.Location = new Point(592, 401);
+            contacttextBox.Location = new Point(424, 391);
             contacttextBox.Name = "contacttextBox";
             contacttextBox.Size = new Size(361, 45);
             contacttextBox.TabIndex = 14;
             // 
             // linkedproductstextBox
             // 
-            linkedproductstextBox.Location = new Point(592, 518);
+            linkedproductstextBox.Location = new Point(424, 508);
             linkedproductstextBox.Name = "linkedproductstextBox";
             linkedproductstextBox.Size = new Size(361, 45);
             linkedproductstextBox.TabIndex = 15;
@@ -151,7 +158,7 @@
             AutoScaleDimensions = new SizeF(17F, 38F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
-            ClientSize = new Size(1275, 887);
+            ClientSize = new Size(965, 820);
             Controls.Add(linkedproductstextBox);
             Controls.Add(contacttextBox);
             Controls.Add(nametextBox);

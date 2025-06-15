@@ -39,11 +39,11 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(166, 85);
+            label1.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(71, 69);
             label1.Margin = new Padding(7, 0, 7, 0);
             label1.Name = "label1";
-            label1.Size = new Size(434, 45);
+            label1.Size = new Size(380, 38);
             label1.TabIndex = 1;
             label1.Text = "Product Management Form";
             // 
@@ -51,11 +51,12 @@
             // 
             linkAddPdt.ActiveLinkColor = Color.Black;
             linkAddPdt.AutoSize = true;
+            linkAddPdt.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
             linkAddPdt.LinkColor = Color.FromArgb(64, 64, 64);
-            linkAddPdt.Location = new Point(275, 199);
+            linkAddPdt.Location = new Point(166, 191);
             linkAddPdt.Margin = new Padding(7, 0, 7, 0);
             linkAddPdt.Name = "linkAddPdt";
-            linkAddPdt.Size = new Size(182, 38);
+            linkAddPdt.Size = new Size(145, 30);
             linkAddPdt.TabIndex = 2;
             linkAddPdt.TabStop = true;
             linkAddPdt.Text = "Add Product";
@@ -66,11 +67,12 @@
             // 
             linkUpdatePdt.ActiveLinkColor = Color.Black;
             linkUpdatePdt.AutoSize = true;
+            linkUpdatePdt.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
             linkUpdatePdt.LinkColor = Color.FromArgb(64, 64, 64);
-            linkUpdatePdt.Location = new Point(262, 281);
+            linkUpdatePdt.Location = new Point(152, 270);
             linkUpdatePdt.Margin = new Padding(7, 0, 7, 0);
             linkUpdatePdt.Name = "linkUpdatePdt";
-            linkUpdatePdt.Size = new Size(223, 38);
+            linkUpdatePdt.Size = new Size(179, 30);
             linkUpdatePdt.TabIndex = 3;
             linkUpdatePdt.TabStop = true;
             linkUpdatePdt.Text = "Update Product";
@@ -81,11 +83,12 @@
             // 
             linkDelPdt.ActiveLinkColor = Color.Black;
             linkDelPdt.AutoSize = true;
+            linkDelPdt.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
             linkDelPdt.LinkColor = Color.FromArgb(64, 64, 64);
-            linkDelPdt.Location = new Point(262, 371);
+            linkDelPdt.Location = new Point(152, 352);
             linkDelPdt.Margin = new Padding(7, 0, 7, 0);
             linkDelPdt.Name = "linkDelPdt";
-            linkDelPdt.Size = new Size(213, 38);
+            linkDelPdt.Size = new Size(169, 30);
             linkDelPdt.TabIndex = 4;
             linkDelPdt.TabStop = true;
             linkDelPdt.Text = "Delete Product";
@@ -96,11 +99,12 @@
             // 
             linkSearchPdt.ActiveLinkColor = Color.Black;
             linkSearchPdt.AutoSize = true;
+            linkSearchPdt.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
             linkSearchPdt.LinkColor = Color.FromArgb(64, 64, 64);
-            linkSearchPdt.Location = new Point(262, 450);
+            linkSearchPdt.Location = new Point(160, 435);
             linkSearchPdt.Margin = new Padding(7, 0, 7, 0);
             linkSearchPdt.Name = "linkSearchPdt";
-            linkSearchPdt.Size = new Size(215, 38);
+            linkSearchPdt.Size = new Size(171, 30);
             linkSearchPdt.TabIndex = 5;
             linkSearchPdt.TabStop = true;
             linkSearchPdt.Text = "Search Product";
@@ -109,7 +113,8 @@
             // 
             // btnBacktoMenu
             // 
-            btnBacktoMenu.Location = new Point(201, 530);
+            btnBacktoMenu.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnBacktoMenu.Location = new Point(82, 514);
             btnBacktoMenu.Margin = new Padding(7, 6, 7, 6);
             btnBacktoMenu.Name = "btnBacktoMenu";
             btnBacktoMenu.Size = new Size(359, 55);
@@ -123,7 +128,7 @@
             AutoScaleDimensions = new SizeF(17F, 38F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
-            ClientSize = new Size(784, 625);
+            ClientSize = new Size(542, 625);
             Controls.Add(btnBacktoMenu);
             Controls.Add(linkSearchPdt);
             Controls.Add(linkDelPdt);

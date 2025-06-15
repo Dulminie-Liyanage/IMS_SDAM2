@@ -44,20 +44,22 @@
             // lblTitle
             // 
             lblTitle.AutoSize = true;
-            lblTitle.Font = new Font("Segoe UI", 13F, FontStyle.Bold | FontStyle.Underline);
-            lblTitle.Location = new Point(177, 56);
+            lblTitle.Font = new Font("Segoe UI", 14F, FontStyle.Bold | FontStyle.Underline);
+            lblTitle.Location = new Point(221, 70);
+            lblTitle.Margin = new Padding(4, 0, 4, 0);
             lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(175, 30);
+            lblTitle.Size = new Size(224, 38);
             lblTitle.TabIndex = 0;
             lblTitle.Text = "Low Stock Alert";
             // 
             // btnCheck
             // 
             btnCheck.BackColor = SystemColors.Info;
-            btnCheck.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            btnCheck.Location = new Point(388, 113);
+            btnCheck.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            btnCheck.Location = new Point(485, 141);
+            btnCheck.Margin = new Padding(4, 4, 4, 4);
             btnCheck.Name = "btnCheck";
-            btnCheck.Size = new Size(94, 29);
+            btnCheck.Size = new Size(118, 36);
             btnCheck.TabIndex = 7;
             btnCheck.Text = "Check";
             btnCheck.UseVisualStyleBackColor = false;
@@ -65,19 +67,21 @@
             // 
             // numLimit
             // 
-            numLimit.Location = new Point(315, 115);
+            numLimit.Location = new Point(394, 144);
+            numLimit.Margin = new Padding(4, 4, 4, 4);
             numLimit.Name = "numLimit";
-            numLimit.Size = new Size(52, 27);
+            numLimit.Size = new Size(65, 31);
             numLimit.TabIndex = 8;
             // 
             // dgvStock
             // 
             dgvStock.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvStock.Columns.AddRange(new DataGridViewColumn[] { SKU, Name, Quantity });
-            dgvStock.Location = new Point(26, 176);
+            dgvStock.Location = new Point(32, 220);
+            dgvStock.Margin = new Padding(4, 4, 4, 4);
             dgvStock.Name = "dgvStock";
             dgvStock.RowHeadersWidth = 51;
-            dgvStock.Size = new Size(426, 80);
+            dgvStock.Size = new Size(427, 91);
             dgvStock.TabIndex = 9;
             // 
             // SKU
@@ -107,19 +111,22 @@
             // lblLimit
             // 
             lblLimit.AutoSize = true;
-            lblLimit.Location = new Point(26, 115);
+            lblLimit.Font = new Font("Segoe UI", 11F);
+            lblLimit.Location = new Point(32, 144);
+            lblLimit.Margin = new Padding(4, 0, 4, 0);
             lblLimit.Name = "lblLimit";
-            lblLimit.Size = new Size(261, 20);
+            lblLimit.Size = new Size(381, 30);
             lblLimit.TabIndex = 10;
             lblLimit.Text = "Show products with quantity less than:";
             // 
             // backbtn
             // 
             backbtn.BackColor = SystemColors.Info;
-            backbtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            backbtn.Location = new Point(488, 113);
+            backbtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            backbtn.Location = new Point(610, 141);
+            backbtn.Margin = new Padding(4, 4, 4, 4);
             backbtn.Name = "backbtn";
-            backbtn.Size = new Size(94, 29);
+            backbtn.Size = new Size(118, 36);
             backbtn.TabIndex = 11;
             backbtn.Text = "Back";
             backbtn.UseVisualStyleBackColor = false;
@@ -127,10 +134,10 @@
             // 
             // low_stock
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
-            ClientSize = new Size(609, 311);
+            ClientSize = new Size(761, 389);
             Controls.Add(backbtn);
             Controls.Add(lblLimit);
             Controls.Add(dgvStock);
@@ -138,6 +145,8 @@
             Controls.Add(btnCheck);
             Controls.Add(lblTitle);
             Cursor = Cursors.Hand;
+            Margin = new Padding(4, 4, 4, 4);
+            Name = "low_stock";
             Text = "low_stock";
             ((System.ComponentModel.ISupportInitialize)numLimit).EndInit();
             ((System.ComponentModel.ISupportInitialize)dgvStock).EndInit();
