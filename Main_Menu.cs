@@ -98,12 +98,20 @@ namespace IMS
 
         private void linkStockMove_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            this.Hide();
 
         }
 
         private void Main_Menu_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void linkReports_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            dgvReports dgvReports = new dgvReports();
+            dgvReports.Show();
         }
     }
 }

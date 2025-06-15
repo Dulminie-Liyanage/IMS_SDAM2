@@ -54,7 +54,7 @@
             // 
             btnExit.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnExit.Location = new Point(99, 439);
-            btnExit.Margin = new Padding(4, 4, 4, 4);
+            btnExit.Margin = new Padding(4);
             btnExit.Name = "btnExit";
             btnExit.Size = new Size(253, 42);
             btnExit.TabIndex = 8;
@@ -138,6 +138,7 @@
             linkReports.TabStop = true;
             linkReports.Text = "Reports";
             linkReports.TextAlign = ContentAlignment.MiddleCenter;
+            linkReports.LinkClicked += linkReports_LinkClicked;
             // 
             // linkStockAlert
             // 
@@ -170,7 +171,7 @@
             Controls.Add(linkProductMng);
             Controls.Add(btnExit);
             Controls.Add(lblTitle);
-            Margin = new Padding(4, 4, 4, 4);
+            Margin = new Padding(4);
             Name = "Main_Menu";
             Text = "Main_Menu";
             Load += Main_Menu_Load;
