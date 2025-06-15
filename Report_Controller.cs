@@ -10,6 +10,9 @@ namespace IMS
 {
     internal class Report_Controller
     {
+        // Define the connection string to the MySQL database
+        static string connStr = "server=127.0.0.1;uid=root;pwd=;database=inventory_db;";
+        static MySqlConnection conn = new MySqlConnection(connStr);
         public static DataTable GetMostOrderedProducts()
         {
             string query = @"
@@ -25,8 +28,7 @@ namespace IMS
             da.Fill(dt);
             return dt;
         }
-        static string connStr = "server=127.0.0.1;uid=root;pwd=;database=inventory_db;";
-        static MySqlConnection conn = new MySqlConnection(connStr);
+
         public static DataTable GetStockLevels()
         {
             string query = "SELECT sku, name, quantity FROM products";
@@ -37,6 +39,6 @@ namespace IMS
             da.Fill(dt);
             return dt;
         }
+
     }
 }
-
