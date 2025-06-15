@@ -45,9 +45,11 @@
             // SearchOrder
             // 
             SearchOrder.AutoSize = true;
-            SearchOrder.Location = new Point(304, 36);
+            SearchOrder.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            SearchOrder.Location = new Point(419, 31);
+            SearchOrder.Margin = new Padding(4, 0, 4, 0);
             SearchOrder.Name = "SearchOrder";
-            SearchOrder.Size = new Size(115, 25);
+            SearchOrder.Size = new Size(215, 45);
             SearchOrder.TabIndex = 0;
             SearchOrder.Text = "Search Order";
             SearchOrder.Click += SearchOrder_Click;
@@ -55,24 +57,27 @@
             // OrderSKU
             // 
             OrderSKU.AutoSize = true;
-            OrderSKU.Location = new Point(42, 120);
+            OrderSKU.Location = new Point(59, 154);
+            OrderSKU.Margin = new Padding(4, 0, 4, 0);
             OrderSKU.Name = "OrderSKU";
-            OrderSKU.Size = new Size(186, 25);
+            OrderSKU.Size = new Size(264, 32);
             OrderSKU.TabIndex = 1;
             OrderSKU.Text = "Search by Order SKU :";
             // 
             // SKUtextBox
             // 
-            SKUtextBox.Location = new Point(260, 114);
+            SKUtextBox.Location = new Point(364, 146);
+            SKUtextBox.Margin = new Padding(4, 4, 4, 4);
             SKUtextBox.Name = "SKUtextBox";
-            SKUtextBox.Size = new Size(264, 31);
+            SKUtextBox.Size = new Size(368, 39);
             SKUtextBox.TabIndex = 2;
             // 
             // SearchBtn
             // 
-            SearchBtn.Location = new Point(561, 111);
+            SearchBtn.Location = new Point(785, 142);
+            SearchBtn.Margin = new Padding(4, 4, 4, 4);
             SearchBtn.Name = "SearchBtn";
-            SearchBtn.Size = new Size(112, 34);
+            SearchBtn.Size = new Size(157, 44);
             SearchBtn.TabIndex = 3;
             SearchBtn.Text = "Search";
             SearchBtn.UseVisualStyleBackColor = true;
@@ -80,9 +85,10 @@
             // 
             // BackBtn
             // 
-            BackBtn.Location = new Point(692, 111);
+            BackBtn.Location = new Point(969, 142);
+            BackBtn.Margin = new Padding(4, 4, 4, 4);
             BackBtn.Name = "BackBtn";
-            BackBtn.Size = new Size(112, 34);
+            BackBtn.Size = new Size(157, 44);
             BackBtn.TabIndex = 4;
             BackBtn.Text = "Back";
             BackBtn.UseVisualStyleBackColor = true;
@@ -92,10 +98,11 @@
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3, Column4, Column5 });
-            dataGridView1.Location = new Point(12, 213);
+            dataGridView1.Location = new Point(188, 279);
+            dataGridView1.Margin = new Padding(4, 4, 4, 4);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.Size = new Size(812, 95);
+            dataGridView1.Size = new Size(812, 106);
             dataGridView1.TabIndex = 6;
             // 
             // Column1
@@ -135,15 +142,18 @@
             // 
             // Search_Order
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(14F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(848, 352);
+            BackColor = SystemColors.ActiveCaption;
+            ClientSize = new Size(1187, 451);
             Controls.Add(dataGridView1);
             Controls.Add(BackBtn);
             Controls.Add(SearchBtn);
             Controls.Add(SKUtextBox);
             Controls.Add(OrderSKU);
             Controls.Add(SearchOrder);
+            Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Margin = new Padding(4, 4, 4, 4);
             Name = "Search_Order";
             Text = "Search_Order";
             Load += Search_Order_Load;
