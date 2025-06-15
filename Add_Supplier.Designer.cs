@@ -1,6 +1,6 @@
 ﻿namespace IMS
 {
-    partial class Addform
+    partial class Add_Supplier
     {
         /// <summary>
         /// Required designer variable.
@@ -45,53 +45,59 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(359, 36);
+            label1.Location = new Point(250, 41);
+            label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(116, 25);
+            label1.Size = new Size(96, 20);
             label1.TabIndex = 0;
             label1.Text = "Add Supplier";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(141, 134);
+            label2.Location = new Point(113, 107);
+            label2.Margin = new Padding(2, 0, 2, 0);
             label2.Name = "label2";
-            label2.Size = new Size(109, 25);
+            label2.Size = new Size(90, 20);
             label2.TabIndex = 1;
             label2.Text = "Supplier ID :";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(141, 197);
+            label3.Location = new Point(113, 158);
+            label3.Margin = new Padding(2, 0, 2, 0);
             label3.Name = "label3";
-            label3.Size = new Size(68, 25);
+            label3.Size = new Size(56, 20);
             label3.TabIndex = 2;
             label3.Text = "Name :";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(141, 267);
+            label4.Location = new Point(113, 214);
+            label4.Margin = new Padding(2, 0, 2, 0);
             label4.Name = "label4";
-            label4.Size = new Size(119, 25);
+            label4.Size = new Size(97, 20);
             label4.TabIndex = 3;
             label4.Text = "Contact Info :";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(141, 344);
+            label5.Location = new Point(113, 275);
+            label5.Margin = new Padding(2, 0, 2, 0);
             label5.Name = "label5";
-            label5.Size = new Size(147, 25);
+            label5.Size = new Size(120, 20);
             label5.TabIndex = 4;
             label5.Text = "Linked Products :";
             // 
             // Add
             // 
-            Add.Location = new Point(97, 471);
+            Add.Location = new Point(78, 377);
+            Add.Margin = new Padding(2, 2, 2, 2);
             Add.Name = "Add";
-            Add.Size = new Size(112, 34);
+            Add.Size = new Size(90, 27);
             Add.TabIndex = 9;
             Add.Text = "Add";
             Add.UseVisualStyleBackColor = true;
@@ -99,9 +105,10 @@
             // 
             // button6
             // 
-            button6.Location = new Point(260, 471);
+            button6.Location = new Point(208, 377);
+            button6.Margin = new Padding(2, 2, 2, 2);
             button6.Name = "button6";
-            button6.Size = new Size(112, 34);
+            button6.Size = new Size(90, 27);
             button6.TabIndex = 10;
             button6.Text = "Clear";
             button6.UseVisualStyleBackColor = true;
@@ -109,9 +116,10 @@
             // 
             // button7
             // 
-            button7.Location = new Point(491, 471);
+            button7.Location = new Point(393, 377);
+            button7.Margin = new Padding(2, 2, 2, 2);
             button7.Name = "button7";
-            button7.Size = new Size(112, 34);
+            button7.Size = new Size(90, 27);
             button7.TabIndex = 11;
             button7.Text = "Back";
             button7.UseVisualStyleBackColor = true;
@@ -119,38 +127,42 @@
             // 
             // idtextBox
             // 
-            idtextBox.Location = new Point(348, 131);
+            idtextBox.Location = new Point(278, 105);
+            idtextBox.Margin = new Padding(2, 2, 2, 2);
             idtextBox.Name = "idtextBox";
-            idtextBox.Size = new Size(214, 31);
+            idtextBox.Size = new Size(172, 27);
             idtextBox.TabIndex = 12;
             // 
             // nametextBox
             // 
-            nametextBox.Location = new Point(348, 194);
+            nametextBox.Location = new Point(278, 155);
+            nametextBox.Margin = new Padding(2, 2, 2, 2);
             nametextBox.Name = "nametextBox";
-            nametextBox.Size = new Size(214, 31);
+            nametextBox.Size = new Size(172, 27);
             nametextBox.TabIndex = 13;
             nametextBox.TextChanged += nametextBox2_TextChanged;
             // 
             // contacttextBox
             // 
-            contacttextBox.Location = new Point(348, 264);
+            contacttextBox.Location = new Point(278, 211);
+            contacttextBox.Margin = new Padding(2, 2, 2, 2);
             contacttextBox.Name = "contacttextBox";
-            contacttextBox.Size = new Size(214, 31);
+            contacttextBox.Size = new Size(172, 27);
             contacttextBox.TabIndex = 14;
             // 
             // linkedproductstextBox
             // 
-            linkedproductstextBox.Location = new Point(348, 341);
+            linkedproductstextBox.Location = new Point(278, 273);
+            linkedproductstextBox.Margin = new Padding(2, 2, 2, 2);
             linkedproductstextBox.Name = "linkedproductstextBox";
-            linkedproductstextBox.Size = new Size(214, 31);
+            linkedproductstextBox.Size = new Size(172, 27);
             linkedproductstextBox.TabIndex = 15;
             // 
             // Addform
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(750, 588);
+            ClientSize = new Size(600, 470);
             Controls.Add(linkedproductstextBox);
             Controls.Add(contacttextBox);
             Controls.Add(nametextBox);
@@ -163,6 +175,7 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
+            Margin = new Padding(2, 2, 2, 2);
             Name = "Addform";
             Text = "Addform";
             ResumeLayout(false);

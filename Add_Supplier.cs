@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace IMS
 {
-    public partial class Addform : Form
+    public partial class Add_Supplier : Form
     {
-        public Addform()
+        public Add_Supplier()
         {
             InitializeComponent();
         }
 
         private void Add_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(SupplierController.AddSupplier(nametextBox.Text, contacttextBox.Text));
+            MessageBox.Show(Supplier_Controller.AddSupplier(idtextBox.Text, nametextBox.Text, contacttextBox.Text));
         }
 
         private void nametextBox2_TextChanged(object sender, EventArgs e)

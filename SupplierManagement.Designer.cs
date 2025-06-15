@@ -49,19 +49,19 @@
             // updatelink
             // 
             updatelink.AutoSize = true;
-            updatelink.Location = new Point(133, 184);
+            updatelink.Location = new Point(123, 148);
             updatelink.Margin = new Padding(2, 0, 2, 0);
             updatelink.Name = "updatelink";
             updatelink.Size = new Size(117, 20);
             updatelink.TabIndex = 2;
             updatelink.TabStop = true;
             updatelink.Text = "Update Supplier";
-            updatelink.LinkClicked += linkLabel2_LinkClicked;
+            updatelink.LinkClicked += updatelink_LinkClicked;
             // 
             // deletelink
             // 
             deletelink.AutoSize = true;
-            deletelink.Location = new Point(133, 252);
+            deletelink.Location = new Point(123, 200);
             deletelink.Margin = new Padding(2, 0, 2, 0);
             deletelink.Name = "deletelink";
             deletelink.Size = new Size(112, 20);
@@ -73,7 +73,7 @@
             // searchlink
             // 
             searchlink.AutoSize = true;
-            searchlink.Location = new Point(133, 317);
+            searchlink.Location = new Point(123, 253);
             searchlink.Margin = new Padding(2, 0, 2, 0);
             searchlink.Name = "searchlink";
             searchlink.Size = new Size(112, 20);
@@ -84,8 +84,8 @@
             // 
             // button1
             // 
-            button1.Location = new Point(102, 385);
-            button1.Margin = new Padding(2, 2, 2, 2);
+            button1.Location = new Point(85, 299);
+            button1.Margin = new Padding(2);
             button1.Name = "button1";
             button1.Size = new Size(179, 27);
             button1.TabIndex = 5;
@@ -96,7 +96,7 @@
             // addsupplierlink
             // 
             addsupplierlink.AutoSize = true;
-            addsupplierlink.Location = new Point(133, 117);
+            addsupplierlink.Location = new Point(132, 98);
             addsupplierlink.Margin = new Padding(2, 0, 2, 0);
             addsupplierlink.Name = "addsupplierlink";
             addsupplierlink.Size = new Size(96, 20);
@@ -109,14 +109,14 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(382, 448);
+            ClientSize = new Size(356, 359);
             Controls.Add(addsupplierlink);
             Controls.Add(button1);
             Controls.Add(searchlink);
             Controls.Add(deletelink);
             Controls.Add(updatelink);
             Controls.Add(label1);
-            Margin = new Padding(2, 2, 2, 2);
+            Margin = new Padding(2);
             Name = "SupplierManagement";
             Text = "SupplierManagementForm1";
             Load += SupplierManagement_Load;

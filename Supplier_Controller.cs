@@ -15,15 +15,15 @@ namespace IMS
         static MySqlConnection conn = new MySqlConnection(connStr);
 
         // Add Supplier
-        public static string AddSupplier(string id, string name, string contact)
+        public static string AddSupplier(string supplier_id, string name, string contact)
         {
-            if (id == "" || name == "" || contact == "")
+            if (supplier_id == "" || name == "" || contact == "")
                 return "Please fill all the fields!";
 
             // Validate ID
             try
             {
-                int sid = Convert.ToInt32(id);
+                int sid = Convert.ToInt32(supplier_id);
                 if (sid <= 0)
                     return "Supplier ID must be a positive number.";
             }
@@ -31,21 +31,31 @@ namespace IMS
             {
                 return "Supplier ID must be a number.";
             }
+            try
+            {
+                int scontact = Convert.ToInt32(contact);
+                if (scontact <= 0)
+                    return "Supplier Contact must be a positive number.";
+            }
+            catch
+            {
+                return "Supplier Contact must be a number.";
+            }
 
-            string checkQuery = "SELECT COUNT(*) FROM suppliers WHERE id = @id";
+            string checkQuery = "SELECT COUNT(*) FROM supplier WHERE supplier_id = @supplier_id";
             conn.Open();
             MySqlCommand checkCmd = new MySqlCommand(checkQuery, conn);
-            checkCmd.Parameters.AddWithValue("@id", id);
+            checkCmd.Parameters.AddWithValue("@supplier_id", supplier_id);
             int count = Convert.ToInt32(checkCmd.ExecuteScalar());
             conn.Close();
 
             if (count > 0)
                 return "Supplier ID already exists.";
 
-            string insert = "INSERT INTO suppliers (id, name, contact_info) VALUES (@id, @name, @contact)";
+            string insert = "INSERT INTO supplier (supplier_id, name, contact) VALUES (@supplier_id, @name, @contact)";
             conn.Open();
             MySqlCommand cmd = new MySqlCommand(insert, conn);
-            cmd.Parameters.AddWithValue("@id", id);
+            cmd.Parameters.AddWithValue("@supplier_id", supplier_id);
             cmd.Parameters.AddWithValue("@name", name);
             cmd.Parameters.AddWithValue("@contact", contact);
             cmd.ExecuteNonQuery();
@@ -55,14 +65,14 @@ namespace IMS
         }
 
         // Update Supplier
-        public static string UpdateSupplier(string id, string name, string contact)
+        public static string UpdateSupplier(string supplier_id, string name, string contact)
         {
-            if (id == "" || name == "" || contact == "")
+            if (supplier_id == "" || name == "" || contact == "")
                 return "Please fill all fields!";
 
             try
             {
-                int sid = Convert.ToInt32(id);
+                int sid = Convert.ToInt32(supplier_id);
                 if (sid <= 0)
                     return "Supplier ID must be positive.";
             }
@@ -71,10 +81,21 @@ namespace IMS
                 return "Supplier ID must be a number.";
             }
 
-            string update = "UPDATE suppliers SET name=@name, contact_info=@contact WHERE id=@id";
+            try
+            {
+                int scontact = Convert.ToInt32(contact);
+                if (scontact <= 0)
+                    return "Supplier Contact must be a positive number.";
+            }
+            catch
+            {
+                return "Supplier Contact must be a number.";
+            }
+
+            string update = "UPDATE supplier SET name=@name, contact_info=@contact WHERE id=@id";
             conn.Open();
             MySqlCommand cmd = new MySqlCommand(update, conn);
-            cmd.Parameters.AddWithValue("@id", id);
+            cmd.Parameters.AddWithValue("@supplier_id", supplier_id);
             cmd.Parameters.AddWithValue("@name", name);
             cmd.Parameters.AddWithValue("@contact", contact);
             int rows = cmd.ExecuteNonQuery();
@@ -87,15 +108,15 @@ namespace IMS
         }
 
         // Delete Supplier
-        public static string DeleteSupplier(string id)
+        public static string DeleteSupplier(string supplier_id)
         {
-            if (id == "")
+            if (supplier_id == "")
                 return "Please enter Supplier ID.";
 
-            string query = "DELETE FROM suppliers WHERE id = @id";
+            string query = "DELETE FROM supplier WHERE supplier_id = @supplier_id";
             conn.Open();
             MySqlCommand cmd = new MySqlCommand(query, conn);
-            cmd.Parameters.AddWithValue("@id", id);
+            cmd.Parameters.AddWithValue("@supplier_id", supplier_id);
             int rows = cmd.ExecuteNonQuery();
             conn.Close();
 
@@ -108,7 +129,7 @@ namespace IMS
         // Search Supplier
         public static DataTable SearchSupplier(string keyword)
         {
-            string query = "SELECT * FROM suppliers WHERE id LIKE @kw OR name LIKE @kw";
+            string query = "SELECT * FROM supplier WHERE id LIKE @kw OR name LIKE @kw";
             MySqlCommand cmd = new MySqlCommand(query, conn);
             cmd.Parameters.AddWithValue("@kw", $"%{keyword}%");
 
