@@ -68,5 +68,10 @@ namespace IMS
             txtPrice.Text = "";
             txtCategory.Text = "";
         }
+
+        private void Update_Product_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

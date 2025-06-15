@@ -19,11 +19,14 @@ namespace IMS
         public static string CreateNewOrder(string orderID, string product, string supplier, string quantity, string status, string date)
         {
             if (orderID == "" || product == "" ||quantity == "" || status == "" || date == "" )
-                return "Please fill all fields!";
+                return "Please fill all fields!"; //check if all the field are filled
 
+            // Check if quantity is a valid number
             try
             {
-                Convert.ToInt32(quantity);
+                int qty = Convert.ToInt32(quantity);
+                if (qty <= 0)
+                    return "Quantity cannot be negative!";
             }
             catch
             {
@@ -54,12 +57,26 @@ namespace IMS
 
             try
             {
-                Convert.ToInt32(quantity);
-                Convert.ToInt32(orderId);
+                int qty = Convert.ToInt32(quantity);
+                if (qty <= 0)
+                    return "Quantity cannot be negative!";
+                
             }
             catch
             {
-                return "Order ID and Quantity must be valid numbers!";
+                return "Quantity must be valid number!";
+            }
+
+            try
+            {
+                int id = Convert.ToInt32(orderId);
+                if (id <= 0)
+                    return "Order ID must be a positive number!";
+            }
+
+            catch
+            {
+                return "Order ID must be a valid number!";
             }
 
             string update = "UPDATE orders SET orderId=@orderId, product=@product, quantity=@quantity, status=@status, date=@orderdate WHERE order_id=@orderId";
@@ -105,7 +122,7 @@ namespace IMS
             }
         }
 
-        // (Optional) Load Orders to View
+        // Load Orders to View
         public static DataTable LoadOrders()
         {
             DataTable dt = new DataTable();

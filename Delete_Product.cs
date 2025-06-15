@@ -38,5 +38,10 @@ namespace IMS
             prductManagement.Show();
             this.Close(); //Close the add product form
         }
+
+        private void Delete_Product_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
