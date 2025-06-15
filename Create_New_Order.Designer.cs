@@ -48,9 +48,10 @@
             // 
             // CreateNewOrder
             // 
-            CreateNewOrder.Location = new Point(234, 12);
+            CreateNewOrder.Location = new Point(398, 18);
+            CreateNewOrder.Margin = new Padding(5, 5, 5, 5);
             CreateNewOrder.Name = "CreateNewOrder";
-            CreateNewOrder.Size = new Size(233, 47);
+            CreateNewOrder.Size = new Size(396, 71);
             CreateNewOrder.TabIndex = 0;
             CreateNewOrder.Text = "Create New Order";
             CreateNewOrder.UseVisualStyleBackColor = true;
@@ -58,82 +59,92 @@
             // Produtlabel
             // 
             Produtlabel.AutoSize = true;
-            Produtlabel.Location = new Point(36, 167);
+            Produtlabel.Location = new Point(61, 254);
+            Produtlabel.Margin = new Padding(5, 0, 5, 0);
             Produtlabel.Name = "Produtlabel";
-            Produtlabel.Size = new Size(135, 25);
+            Produtlabel.Size = new Size(222, 38);
             Produtlabel.TabIndex = 1;
             Produtlabel.Text = "Product Name :";
             // 
             // ProductNametextBox
             // 
-            ProductNametextBox.Location = new Point(202, 164);
+            ProductNametextBox.Location = new Point(343, 249);
+            ProductNametextBox.Margin = new Padding(5, 5, 5, 5);
             ProductNametextBox.Name = "ProductNametextBox";
-            ProductNametextBox.Size = new Size(265, 31);
+            ProductNametextBox.Size = new Size(448, 45);
             ProductNametextBox.TabIndex = 2;
             ProductNametextBox.TextChanged += textBox1_TextChanged;
             // 
             // OrderIDtextBox
             // 
-            OrderIDtextBox.Location = new Point(202, 96);
+            OrderIDtextBox.Location = new Point(343, 146);
+            OrderIDtextBox.Margin = new Padding(5, 5, 5, 5);
             OrderIDtextBox.Name = "OrderIDtextBox";
-            OrderIDtextBox.Size = new Size(265, 31);
+            OrderIDtextBox.Size = new Size(448, 45);
             OrderIDtextBox.TabIndex = 4;
             OrderIDtextBox.TextChanged += OrderIDtextBox_TextChanged;
             // 
             // Supplier
             // 
             Supplier.AutoSize = true;
-            Supplier.Location = new Point(36, 238);
+            Supplier.Location = new Point(61, 362);
+            Supplier.Margin = new Padding(5, 0, 5, 0);
             Supplier.Name = "Supplier";
-            Supplier.Size = new Size(86, 25);
+            Supplier.Size = new Size(142, 38);
             Supplier.TabIndex = 5;
             Supplier.Text = "Supplier :";
             // 
             // SuppliertextBox
             // 
-            SuppliertextBox.Location = new Point(202, 235);
+            SuppliertextBox.Location = new Point(343, 357);
+            SuppliertextBox.Margin = new Padding(5, 5, 5, 5);
             SuppliertextBox.Name = "SuppliertextBox";
-            SuppliertextBox.Size = new Size(265, 31);
+            SuppliertextBox.Size = new Size(448, 45);
             SuppliertextBox.TabIndex = 6;
             // 
             // Quantity
             // 
             Quantity.AutoSize = true;
-            Quantity.Location = new Point(36, 308);
+            Quantity.Location = new Point(61, 468);
+            Quantity.Margin = new Padding(5, 0, 5, 0);
             Quantity.Name = "Quantity";
-            Quantity.Size = new Size(89, 25);
+            Quantity.Size = new Size(148, 38);
             Quantity.TabIndex = 7;
             Quantity.Text = "Quantity :";
             // 
             // QuantitytextBox
             // 
-            QuantitytextBox.Location = new Point(202, 305);
+            QuantitytextBox.Location = new Point(343, 464);
+            QuantitytextBox.Margin = new Padding(5, 5, 5, 5);
             QuantitytextBox.Name = "QuantitytextBox";
-            QuantitytextBox.Size = new Size(189, 31);
+            QuantitytextBox.Size = new Size(318, 45);
             QuantitytextBox.TabIndex = 8;
             // 
             // Status
             // 
             Status.AutoSize = true;
-            Status.Location = new Point(46, 376);
+            Status.Location = new Point(78, 572);
+            Status.Margin = new Padding(5, 0, 5, 0);
             Status.Name = "Status";
-            Status.Size = new Size(69, 25);
+            Status.Size = new Size(114, 38);
             Status.TabIndex = 9;
             Status.Text = "Status :";
             Status.Click += label1_Click_1;
             // 
             // StatustextBox
             // 
-            StatustextBox.Location = new Point(202, 371);
+            StatustextBox.Location = new Point(343, 564);
+            StatustextBox.Margin = new Padding(5, 5, 5, 5);
             StatustextBox.Name = "StatustextBox";
-            StatustextBox.Size = new Size(189, 31);
+            StatustextBox.Size = new Size(318, 45);
             StatustextBox.TabIndex = 10;
             // 
             // CreateBtn
             // 
-            CreateBtn.Location = new Point(67, 540);
+            CreateBtn.Location = new Point(114, 821);
+            CreateBtn.Margin = new Padding(5, 5, 5, 5);
             CreateBtn.Name = "CreateBtn";
-            CreateBtn.Size = new Size(112, 45);
+            CreateBtn.Size = new Size(190, 68);
             CreateBtn.TabIndex = 11;
             CreateBtn.Text = "Create";
             CreateBtn.UseVisualStyleBackColor = true;
@@ -141,9 +152,10 @@
             // 
             // ClearBtn
             // 
-            ClearBtn.Location = new Point(286, 542);
+            ClearBtn.Location = new Point(486, 824);
+            ClearBtn.Margin = new Padding(5, 5, 5, 5);
             ClearBtn.Name = "ClearBtn";
-            ClearBtn.Size = new Size(105, 40);
+            ClearBtn.Size = new Size(178, 61);
             ClearBtn.TabIndex = 15;
             ClearBtn.Text = "Clear";
             ClearBtn.UseVisualStyleBackColor = true;
@@ -152,18 +164,20 @@
             // SKUlabel
             // 
             SKUlabel.AutoSize = true;
-            SKUlabel.Location = new Point(38, 99);
+            SKUlabel.Location = new Point(65, 150);
+            SKUlabel.Margin = new Padding(5, 0, 5, 0);
             SKUlabel.Name = "SKUlabel";
-            SKUlabel.Size = new Size(104, 25);
+            SKUlabel.Size = new Size(170, 38);
             SKUlabel.TabIndex = 16;
             SKUlabel.Text = "Order SKU :";
             SKUlabel.Click += SKUlabel_Click;
             // 
             // BackBtn
             // 
-            BackBtn.Location = new Point(506, 545);
+            BackBtn.Location = new Point(860, 828);
+            BackBtn.Margin = new Padding(5, 5, 5, 5);
             BackBtn.Name = "BackBtn";
-            BackBtn.Size = new Size(117, 40);
+            BackBtn.Size = new Size(199, 61);
             BackBtn.TabIndex = 17;
             BackBtn.Text = "Back";
             BackBtn.UseVisualStyleBackColor = true;
@@ -172,24 +186,27 @@
             // Datelabel
             // 
             Datelabel.AutoSize = true;
-            Datelabel.Location = new Point(46, 448);
+            Datelabel.Location = new Point(78, 681);
+            Datelabel.Margin = new Padding(5, 0, 5, 0);
             Datelabel.Name = "Datelabel";
-            Datelabel.Size = new Size(58, 25);
+            Datelabel.Size = new Size(95, 38);
             Datelabel.TabIndex = 18;
             Datelabel.Text = "Date :";
             // 
             // dateTimePicker1
             // 
-            dateTimePicker1.Location = new Point(202, 448);
+            dateTimePicker1.Location = new Point(343, 681);
+            dateTimePicker1.Margin = new Padding(5, 5, 5, 5);
             dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(300, 31);
+            dateTimePicker1.Size = new Size(507, 45);
             dateTimePicker1.TabIndex = 20;
             // 
             // Create_New_Order
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(17F, 38F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(711, 622);
+            BackColor = SystemColors.ActiveCaption;
+            ClientSize = new Size(1203, 922);
             Controls.Add(dateTimePicker1);
             Controls.Add(Datelabel);
             Controls.Add(BackBtn);
@@ -206,6 +223,8 @@
             Controls.Add(ProductNametextBox);
             Controls.Add(Produtlabel);
             Controls.Add(CreateNewOrder);
+            Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Margin = new Padding(5, 5, 5, 5);
             Name = "Create_New_Order";
             Text = "Create_New_Order";
             Load += Form1_Load;

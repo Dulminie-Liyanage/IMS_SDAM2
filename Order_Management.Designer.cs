@@ -39,18 +39,24 @@
             // OrderManagementLabel
             // 
             OrderManagementLabel.AutoSize = true;
-            OrderManagementLabel.Location = new Point(186, 45);
+            OrderManagementLabel.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            OrderManagementLabel.Location = new Point(274, 71);
+            OrderManagementLabel.Margin = new Padding(5, 0, 5, 0);
             OrderManagementLabel.Name = "OrderManagementLabel";
-            OrderManagementLabel.Size = new Size(215, 25);
+            OrderManagementLabel.Size = new Size(402, 45);
             OrderManagementLabel.TabIndex = 0;
             OrderManagementLabel.Text = "Order Management Form";
+            OrderManagementLabel.Click += OrderManagementLabel_Click;
             // 
             // CreateNewOrder
             // 
+            CreateNewOrder.ActiveLinkColor = Color.Black;
             CreateNewOrder.AutoSize = true;
-            CreateNewOrder.Location = new Point(207, 124);
+            CreateNewOrder.LinkColor = Color.FromArgb(64, 64, 64);
+            CreateNewOrder.Location = new Point(352, 188);
+            CreateNewOrder.Margin = new Padding(5, 0, 5, 0);
             CreateNewOrder.Name = "CreateNewOrder";
-            CreateNewOrder.Size = new Size(153, 25);
+            CreateNewOrder.Size = new Size(251, 38);
             CreateNewOrder.TabIndex = 1;
             CreateNewOrder.TabStop = true;
             CreateNewOrder.Text = "Create New Order";
@@ -58,10 +64,13 @@
             // 
             // UpdateOrder
             // 
+            UpdateOrder.ActiveLinkColor = Color.Black;
             UpdateOrder.AutoSize = true;
-            UpdateOrder.Location = new Point(219, 183);
+            UpdateOrder.LinkColor = Color.FromArgb(64, 64, 64);
+            UpdateOrder.Location = new Point(372, 278);
+            UpdateOrder.Margin = new Padding(5, 0, 5, 0);
             UpdateOrder.Name = "UpdateOrder";
-            UpdateOrder.Size = new Size(121, 25);
+            UpdateOrder.Size = new Size(195, 38);
             UpdateOrder.TabIndex = 2;
             UpdateOrder.TabStop = true;
             UpdateOrder.Text = "Update Order";
@@ -69,10 +78,13 @@
             // 
             // DeleteOrder
             // 
+            DeleteOrder.ActiveLinkColor = Color.Black;
             DeleteOrder.AutoSize = true;
-            DeleteOrder.Location = new Point(219, 247);
+            DeleteOrder.LinkColor = Color.FromArgb(64, 64, 64);
+            DeleteOrder.Location = new Point(372, 375);
+            DeleteOrder.Margin = new Padding(5, 0, 5, 0);
             DeleteOrder.Name = "DeleteOrder";
-            DeleteOrder.Size = new Size(113, 25);
+            DeleteOrder.Size = new Size(185, 38);
             DeleteOrder.TabIndex = 3;
             DeleteOrder.TabStop = true;
             DeleteOrder.Text = "Delete Order";
@@ -80,10 +92,13 @@
             // 
             // SearchOrder
             // 
+            SearchOrder.ActiveLinkColor = Color.Black;
             SearchOrder.AutoSize = true;
-            SearchOrder.Location = new Point(219, 309);
+            SearchOrder.LinkColor = Color.FromArgb(64, 64, 64);
+            SearchOrder.Location = new Point(372, 470);
+            SearchOrder.Margin = new Padding(5, 0, 5, 0);
             SearchOrder.Name = "SearchOrder";
-            SearchOrder.Size = new Size(115, 25);
+            SearchOrder.Size = new Size(187, 38);
             SearchOrder.TabIndex = 4;
             SearchOrder.TabStop = true;
             SearchOrder.Text = "Search Order";
@@ -91,9 +106,10 @@
             // 
             // backtomainmenuBtn
             // 
-            backtomainmenuBtn.Location = new Point(176, 377);
+            backtomainmenuBtn.Location = new Point(299, 573);
+            backtomainmenuBtn.Margin = new Padding(5, 5, 5, 5);
             backtomainmenuBtn.Name = "backtomainmenuBtn";
-            backtomainmenuBtn.Size = new Size(216, 45);
+            backtomainmenuBtn.Size = new Size(367, 68);
             backtomainmenuBtn.TabIndex = 5;
             backtomainmenuBtn.Text = "Back To Main Menu";
             backtomainmenuBtn.UseVisualStyleBackColor = true;
@@ -101,15 +117,18 @@
             // 
             // Order_Management
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(17F, 38F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(619, 450);
+            BackColor = SystemColors.ActiveCaption;
+            ClientSize = new Size(960, 684);
             Controls.Add(backtomainmenuBtn);
             Controls.Add(SearchOrder);
             Controls.Add(DeleteOrder);
             Controls.Add(UpdateOrder);
             Controls.Add(CreateNewOrder);
             Controls.Add(OrderManagementLabel);
+            Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Margin = new Padding(5, 5, 5, 5);
             Name = "Order_Management";
             Text = "Order_Management";
             Load += Order_Management_Load;

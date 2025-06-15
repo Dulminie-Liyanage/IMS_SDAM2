@@ -99,7 +99,7 @@
             DeleteOrderLabel.AutoSize = true;
             DeleteOrderLabel.Location = new Point(246, 29);
             DeleteOrderLabel.Name = "DeleteOrderLabel";
-            DeleteOrderLabel.Size = new Size(113, 25);
+            DeleteOrderLabel.Size = new Size(185, 38);
             DeleteOrderLabel.TabIndex = 0;
             DeleteOrderLabel.Text = "Delete Order";
             // 
@@ -108,7 +108,7 @@
             OrderSKU.AutoSize = true;
             OrderSKU.Location = new Point(33, 104);
             OrderSKU.Name = "OrderSKU";
-            OrderSKU.Size = new Size(104, 25);
+            OrderSKU.Size = new Size(170, 38);
             OrderSKU.TabIndex = 1;
             OrderSKU.Text = "Order SKU :";
             // 
@@ -116,23 +116,24 @@
             // 
             OSKUtextBox.Location = new Point(207, 98);
             OSKUtextBox.Name = "OSKUtextBox";
-            OSKUtextBox.Size = new Size(225, 31);
+            OSKUtextBox.Size = new Size(225, 45);
             OSKUtextBox.TabIndex = 2;
             // 
             // btnclear
             // 
-            btnclear.Location = new Point(257, 224);
+            btnclear.Location = new Point(232, 224);
             btnclear.Name = "btnclear";
-            btnclear.Size = new Size(112, 34);
+            btnclear.Size = new Size(131, 51);
             btnclear.TabIndex = 4;
             btnclear.Text = "Clear";
             btnclear.UseVisualStyleBackColor = true;
+            btnclear.Click += btnclear_Click;
             // 
             // btnBack
             // 
             btnBack.Location = new Point(462, 224);
             btnBack.Name = "btnBack";
-            btnBack.Size = new Size(112, 34);
+            btnBack.Size = new Size(123, 51);
             btnBack.TabIndex = 5;
             btnBack.Text = "Back";
             btnBack.UseVisualStyleBackColor = true;
@@ -141,13 +142,14 @@
             // 
             btnDelete.Location = new Point(42, 224);
             btnDelete.Name = "btnDelete";
-            btnDelete.Size = new Size(112, 34);
+            btnDelete.Size = new Size(127, 51);
             btnDelete.TabIndex = 6;
             btnDelete.Text = "Delete";
             btnDelete.UseVisualStyleBackColor = true;
             // 
             // Detele_Order
             // 
+            BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(661, 308);
             Controls.Add(btnDelete);
             Controls.Add(btnBack);
@@ -155,6 +157,7 @@
             Controls.Add(OSKUtextBox);
             Controls.Add(OrderSKU);
             Controls.Add(DeleteOrderLabel);
+            Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Name = "Detele_Order";
             Load += Detele_Order_Load;
             ResumeLayout(false);

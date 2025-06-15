@@ -56,5 +56,10 @@ namespace IMS
         {
 
         }
+
+        private void OrderManagementLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
