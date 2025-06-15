@@ -47,90 +47,101 @@
             // 
             // txtName
             // 
-            txtName.Location = new Point(172, 129);
+            txtName.Location = new Point(215, 161);
+            txtName.Margin = new Padding(4, 4, 4, 4);
             txtName.Name = "txtName";
-            txtName.Size = new Size(170, 27);
+            txtName.Size = new Size(212, 31);
             txtName.TabIndex = 22;
             // 
             // txtQuantity
             // 
-            txtQuantity.Location = new Point(172, 174);
+            txtQuantity.Location = new Point(215, 218);
+            txtQuantity.Margin = new Padding(4, 4, 4, 4);
             txtQuantity.Name = "txtQuantity";
-            txtQuantity.Size = new Size(170, 27);
+            txtQuantity.Size = new Size(212, 31);
             txtQuantity.TabIndex = 21;
             // 
             // txtCategory
             // 
-            txtCategory.Location = new Point(172, 273);
+            txtCategory.Location = new Point(215, 341);
+            txtCategory.Margin = new Padding(4, 4, 4, 4);
             txtCategory.Name = "txtCategory";
-            txtCategory.Size = new Size(170, 27);
+            txtCategory.Size = new Size(212, 31);
             txtCategory.TabIndex = 19;
             // 
             // txtsku
             // 
-            txtsku.Location = new Point(172, 87);
+            txtsku.Location = new Point(215, 109);
+            txtsku.Margin = new Padding(4, 4, 4, 4);
             txtsku.Name = "txtsku";
-            txtsku.Size = new Size(170, 27);
+            txtsku.Size = new Size(212, 31);
             txtsku.TabIndex = 18;
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(58, 273);
+            label6.Location = new Point(72, 341);
+            label6.Margin = new Padding(4, 0, 4, 0);
             label6.Name = "label6";
-            label6.Size = new Size(76, 20);
+            label6.Size = new Size(93, 25);
             label6.TabIndex = 17;
             label6.Text = "Category :";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(58, 174);
+            label4.Location = new Point(72, 218);
+            label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
-            label4.Size = new Size(72, 20);
+            label4.Size = new Size(89, 25);
             label4.TabIndex = 15;
             label4.Text = "Quantity :";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(58, 132);
+            label3.Location = new Point(72, 165);
+            label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
-            label3.Size = new Size(60, 20);
+            label3.Size = new Size(73, 25);
             label3.TabIndex = 14;
             label3.Text = "Name : ";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(58, 94);
+            label2.Location = new Point(72, 118);
+            label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(47, 20);
+            label2.Size = new Size(58, 25);
             label2.TabIndex = 13;
             label2.Text = "SKU : ";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(143, 39);
+            label1.Location = new Point(179, 49);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(92, 20);
+            label1.Size = new Size(113, 25);
             label1.TabIndex = 12;
             label1.Text = "Add Product";
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(168, 164);
+            label7.Location = new Point(210, 205);
+            label7.Margin = new Padding(4, 0, 4, 0);
             label7.Name = "label7";
-            label7.Size = new Size(0, 20);
+            label7.Size = new Size(0, 25);
             label7.TabIndex = 23;
             // 
             // btnAdd
             // 
-            btnAdd.Location = new Point(36, 333);
+            btnAdd.Location = new Point(45, 416);
+            btnAdd.Margin = new Padding(4, 4, 4, 4);
             btnAdd.Name = "btnAdd";
-            btnAdd.Size = new Size(94, 29);
+            btnAdd.Size = new Size(118, 36);
             btnAdd.TabIndex = 24;
             btnAdd.Text = "Add";
             btnAdd.UseVisualStyleBackColor = true;
@@ -138,9 +149,10 @@
             // 
             // btnClear
             // 
-            btnClear.Location = new Point(155, 333);
+            btnClear.Location = new Point(194, 416);
+            btnClear.Margin = new Padding(4, 4, 4, 4);
             btnClear.Name = "btnClear";
-            btnClear.Size = new Size(94, 29);
+            btnClear.Size = new Size(118, 36);
             btnClear.TabIndex = 25;
             btnClear.Text = "Clear";
             btnClear.UseVisualStyleBackColor = true;
@@ -148,9 +160,10 @@
             // 
             // btnBack
             // 
-            btnBack.Location = new Point(272, 333);
+            btnBack.Location = new Point(340, 416);
+            btnBack.Margin = new Padding(4, 4, 4, 4);
             btnBack.Name = "btnBack";
-            btnBack.Size = new Size(94, 29);
+            btnBack.Size = new Size(118, 36);
             btnBack.TabIndex = 26;
             btnBack.Text = "Back";
             btnBack.UseVisualStyleBackColor = true;
@@ -158,25 +171,27 @@
             // 
             // txtPrice
             // 
-            txtPrice.Location = new Point(172, 224);
+            txtPrice.Location = new Point(215, 280);
+            txtPrice.Margin = new Padding(4, 4, 4, 4);
             txtPrice.Name = "txtPrice";
-            txtPrice.Size = new Size(170, 27);
+            txtPrice.Size = new Size(212, 31);
             txtPrice.TabIndex = 28;
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(58, 224);
+            label5.Location = new Point(72, 280);
+            label5.Margin = new Padding(4, 0, 4, 0);
             label5.Name = "label5";
-            label5.Size = new Size(48, 20);
+            label5.Size = new Size(58, 25);
             label5.TabIndex = 27;
             label5.Text = "Price :";
             // 
             // Add_Product
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(403, 393);
+            ClientSize = new Size(504, 491);
             Controls.Add(txtPrice);
             Controls.Add(label5);
             Controls.Add(btnBack);
@@ -192,8 +207,10 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
+            Margin = new Padding(4, 4, 4, 4);
             Name = "Add_Product";
             Text = "Add_Product";
+            Load += Add_Product_Load;
             ResumeLayout(false);
             PerformLayout();
         }

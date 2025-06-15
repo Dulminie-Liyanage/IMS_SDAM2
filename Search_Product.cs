@@ -31,7 +31,7 @@ namespace IMS
 
             if (result.Rows.Count > 0)
             {
-                dgvSearchResults.Columns.Clear(); 
+                dgvSearchResults.Columns.Clear();
                 dgvSearchResults.DataSource = null;
                 dgvSearchResults.DataSource = Product_Controller.SearchProduct(txtsku.Text);
 
@@ -50,5 +50,9 @@ namespace IMS
             this.Close(); //Close the add product form
         }
 
+        private void Search_Product_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

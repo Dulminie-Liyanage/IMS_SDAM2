@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Microsoft.VisualBasic.Devices;
+using Mysqlx.Crud;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -29,7 +31,28 @@ namespace IMS
 
         private void SearchBtn_Click(object sender, EventArgs e)
         {
+            string keyword = SKUtextBox.Text.Trim();
 
+            if (keyword == "")
+            {
+                MessageBox.Show("Please enter SKU or product name to search.");
+                return;
+            }
+
+            DataTable result = Product_Controller.SearchProduct(keyword);
+
+            if (result.Rows.Count > 0)
+            {
+                dataGridView1.Columns.Clear();
+                dataGridView1.DataSource = null;
+                dataGridView1.DataSource = Product_Controller.SearchProduct(SKUtextBox.Text);
+
+            }
+            else
+            {
+                MessageBox.Show("No matching product found.");
+                dataGridView1.DataSource = null;
+            }
         }
 
         private void BackBtn_Click(object sender, EventArgs e)

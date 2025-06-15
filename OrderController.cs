@@ -1,4 +1,5 @@
-﻿using MySql.Data.MySqlClient;
+﻿using Microsoft.VisualBasic.Devices;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -118,15 +119,16 @@ namespace IMS
             return dt;
         }
 
-        // (Optional) Search Order by ID
-        public static DataTable SearchOrder(string orderId)
+        // Search Order by ID
+        public static DataTable SearchOrder(string keyword)
         {
             DataTable dt = new DataTable();
             string query = "SELECT * FROM orders WHERE order_id = @orderId";
 
             conn.Open();
             MySqlCommand cmd = new MySqlCommand(query, conn);
-            cmd.Parameters.AddWithValue("@orderId", orderId);
+            cmd.Parameters.AddWithValue("@kw", $"%{keyword}%");
+
             MySqlDataAdapter da = new MySqlDataAdapter(cmd);
             da.Fill(dt);
             conn.Close();
