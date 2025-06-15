@@ -156,7 +156,6 @@
             Controls.Add(label1);
             Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Margin = new Padding(7, 6, 7, 6);
-            Name = "Search_Product";
             Text = "Search_Product";
             Load += Search_Product_Load;
             ((System.ComponentModel.ISupportInitialize)dgvSearchResults).EndInit();

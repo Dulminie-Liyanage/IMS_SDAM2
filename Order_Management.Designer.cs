@@ -43,7 +43,7 @@
             OrderManagementLabel.Location = new Point(274, 71);
             OrderManagementLabel.Margin = new Padding(5, 0, 5, 0);
             OrderManagementLabel.Name = "OrderManagementLabel";
-            OrderManagementLabel.Size = new Size(402, 45);
+            OrderManagementLabel.Size = new Size(343, 37);
             OrderManagementLabel.TabIndex = 0;
             OrderManagementLabel.Text = "Order Management Form";
             OrderManagementLabel.Click += OrderManagementLabel_Click;
@@ -56,7 +56,7 @@
             CreateNewOrder.Location = new Point(352, 188);
             CreateNewOrder.Margin = new Padding(5, 0, 5, 0);
             CreateNewOrder.Name = "CreateNewOrder";
-            CreateNewOrder.Size = new Size(251, 38);
+            CreateNewOrder.Size = new Size(218, 32);
             CreateNewOrder.TabIndex = 1;
             CreateNewOrder.TabStop = true;
             CreateNewOrder.Text = "Create New Order";
@@ -70,7 +70,7 @@
             UpdateOrder.Location = new Point(372, 278);
             UpdateOrder.Margin = new Padding(5, 0, 5, 0);
             UpdateOrder.Name = "UpdateOrder";
-            UpdateOrder.Size = new Size(195, 38);
+            UpdateOrder.Size = new Size(169, 32);
             UpdateOrder.TabIndex = 2;
             UpdateOrder.TabStop = true;
             UpdateOrder.Text = "Update Order";
@@ -84,7 +84,7 @@
             DeleteOrder.Location = new Point(372, 375);
             DeleteOrder.Margin = new Padding(5, 0, 5, 0);
             DeleteOrder.Name = "DeleteOrder";
-            DeleteOrder.Size = new Size(185, 38);
+            DeleteOrder.Size = new Size(160, 32);
             DeleteOrder.TabIndex = 3;
             DeleteOrder.TabStop = true;
             DeleteOrder.Text = "Delete Order";
@@ -98,7 +98,7 @@
             SearchOrder.Location = new Point(372, 470);
             SearchOrder.Margin = new Padding(5, 0, 5, 0);
             SearchOrder.Name = "SearchOrder";
-            SearchOrder.Size = new Size(187, 38);
+            SearchOrder.Size = new Size(162, 32);
             SearchOrder.TabIndex = 4;
             SearchOrder.TabStop = true;
             SearchOrder.Text = "Search Order";
@@ -107,7 +107,7 @@
             // backtomainmenuBtn
             // 
             backtomainmenuBtn.Location = new Point(299, 573);
-            backtomainmenuBtn.Margin = new Padding(5, 5, 5, 5);
+            backtomainmenuBtn.Margin = new Padding(5);
             backtomainmenuBtn.Name = "backtomainmenuBtn";
             backtomainmenuBtn.Size = new Size(367, 68);
             backtomainmenuBtn.TabIndex = 5;
@@ -117,7 +117,7 @@
             // 
             // Order_Management
             // 
-            AutoScaleDimensions = new SizeF(17F, 38F);
+            AutoScaleDimensions = new SizeF(14F, 31F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(960, 684);
@@ -128,7 +128,7 @@
             Controls.Add(CreateNewOrder);
             Controls.Add(OrderManagementLabel);
             Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Margin = new Padding(5, 5, 5, 5);
+            Margin = new Padding(5);
             Name = "Order_Management";
             Text = "Order_Management";
             Load += Order_Management_Load;

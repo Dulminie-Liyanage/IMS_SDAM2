@@ -145,7 +145,6 @@
             Controls.Add(label1);
             Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Margin = new Padding(2, 3, 2, 3);
-            Name = "Search_Supplier";
             Text = "delete_form";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
