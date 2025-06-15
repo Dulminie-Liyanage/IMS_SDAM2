@@ -12,6 +12,8 @@ namespace IMS
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             Application.Run(new loging_form());
+
+
         }
     }
 }

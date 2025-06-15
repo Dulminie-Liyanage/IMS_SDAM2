@@ -12,11 +12,55 @@ namespace IMS
 {
     public partial class Main_Menu : Form
     {
+        private string userRole;
+
         public Main_Menu()
         {
             InitializeComponent();
         }
 
+
+
+        //private void ApplyRoleRestrictions()
+        //{
+        //    if (userRole == "Admin")
+        //    {
+        //        // Enable all buttons
+        //        linkProductMng.Enabled = true;
+        //        linkSupplierMng.Enabled = true;
+        //        linkOrderMng.Enabled = true;
+        //        linkStockMove.Enabled = true;
+        //        linkStockAlert.Enabled = true;
+        //        linkReports.Enabled = true;
+        //    }
+        //    else if (userRole == "WarehouseStaff")
+        //    {
+        //        linkProductMng.Enabled = true;     // can search/view product
+        //        linkSupplierMng.Enabled = false;   // no access
+        //        linkOrderMng.Enabled = false;
+        //        linkStockMove.Enabled = true;
+        //        linkStockAlert.Enabled = true;
+        //        linkReports.Enabled = false;
+        //    }
+        //    else if (userRole == "Supplier")
+        //    {
+        //        linkProductMng.Enabled = false;    // view only maybe in product form
+        //        linkSupplierMng.Enabled = false;
+        //        linkOrderMng.Enabled = false;
+        //        linkStockMove.Enabled = false;
+        //        linkStockAlert.Enabled = false;
+        //        linkReports.Enabled = false;
+        //    }
+        //    else
+        //    {
+        //        linkProductMng.Enabled = false;
+        //        linkSupplierMng.Enabled = false;
+        //        linkOrderMng.Enabled = false;
+        //        linkStockMove.Enabled = false;
+        //        linkStockAlert.Enabled = false;
+        //        linkReports.Enabled = false;
+        //    }
+        //}
         private void linkProductMng_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Hide();

@@ -72,7 +72,6 @@
             lblTitle.Size = new Size(309, 46);
             lblTitle.TabIndex = 3;
             lblTitle.Text = "Inventory Reports";
-            lblTitle.Click += this.label1_Click;
             // 
             // dataGridView2
             // 
@@ -92,7 +91,6 @@
             btnBack.TabIndex = 6;
             btnBack.Text = "Back to Menu";
             btnBack.UseVisualStyleBackColor = true;
-            btnBack.Click += this.button1_Click;
             // 
             // btnGenerate
             // 
@@ -103,7 +101,6 @@
             btnGenerate.TabIndex = 7;
             btnGenerate.Text = "Generate Report";
             btnGenerate.UseVisualStyleBackColor = true;
-            btnGenerate.Click += this.btnGenerate_Click;
             // 
             // dgvReports
             // 

@@ -30,35 +30,41 @@ namespace IMS
 
         private void submitbtn_Click(object sender, EventArgs e)
         {
-            //Get values by the user 
             string username = usernameTextBox.Text;
             string password = passwordTextBox.Text;
 
-            //connect to sql server 
+            // Connect to MySQL
             string connectingString = "server=127.0.0.1;uid=root;pwd=;database=log_db;";
             MySqlConnection conn = new MySqlConnection(connectingString);
             conn.Open();
 
-            string query1 = "SELECT COUNT(*) FROM users WHERE username=@Username and password = @Password";
-            MySqlCommand cmd1 = new MySqlCommand(query1, conn);
-            cmd1.Parameters.AddWithValue("@username", username);
-            cmd1.Parameters.AddWithValue("@password", password);
+            // Check login and get role
+            string query = "SELECT role FROM users WHERE username = @username AND password = @password";
+            MySqlCommand cmd = new MySqlCommand(query, conn);
+            cmd.Parameters.AddWithValue("@username", username);
+            cmd.Parameters.AddWithValue("@password", password);
 
-            int usercount = Convert.ToInt32(cmd1.ExecuteScalar());
-
+            object roleObj = cmd.ExecuteScalar();
             conn.Close();
-            if (usercount > 0)
+
+            if (roleObj != null)
             {
-                MessageBox.Show("Loging Successfull!");
+                string role = roleObj.ToString();
+
+                // Store user data in session
+                Session.UserRole = role;
+                Session.Username = username;
+
+                MessageBox.Show("Login Successful as " + role);
                 this.Hide();
                 Main_Menu main_Menu = new Main_Menu();
                 main_Menu.Show();
-
             }
             else
             {
                 MessageBox.Show("Wrong Username or Password");
             }
+
         }
     }
 }

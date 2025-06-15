@@ -47,9 +47,9 @@ namespace IMS
 
         private void backbtn_Click(object sender, EventArgs e)
         {
+            this.Hide();
             Main_Menu main_Menu = new Main_Menu();
             main_Menu.Show();
-            this.Close(); 
         }
     }
 }

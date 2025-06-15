@@ -54,11 +54,11 @@
             // submitbtn
             // 
             submitbtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            submitbtn.Location = new Point(70, 196);
+            submitbtn.Location = new Point(85, 210);
             submitbtn.Name = "submitbtn";
             submitbtn.Size = new Size(94, 29);
             submitbtn.TabIndex = 2;
-            submitbtn.Text = "SUBMIT";
+            submitbtn.Text = "Login";
             submitbtn.UseVisualStyleBackColor = true;
             submitbtn.Click += submitbtn_Click;
             // 
