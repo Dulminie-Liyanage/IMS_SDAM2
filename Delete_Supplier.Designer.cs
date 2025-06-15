@@ -39,29 +39,26 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(142, 60);
-            label1.Margin = new Padding(2, 0, 2, 0);
+            label1.Location = new Point(303, 114);
             label1.Name = "label1";
-            label1.Size = new Size(112, 20);
+            label1.Size = new Size(219, 38);
             label1.TabIndex = 0;
             label1.Text = "Delete Supplier";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(46, 121);
-            label2.Margin = new Padding(2, 0, 2, 0);
+            label2.Location = new Point(99, 230);
             label2.Name = "label2";
-            label2.Size = new Size(90, 20);
+            label2.Size = new Size(180, 38);
             label2.TabIndex = 1;
             label2.Text = "Supplier ID :";
             // 
             // delbtn
             // 
-            delbtn.Location = new Point(46, 177);
-            delbtn.Margin = new Padding(2);
+            delbtn.Location = new Point(99, 336);
             delbtn.Name = "delbtn";
-            delbtn.Size = new Size(90, 27);
+            delbtn.Size = new Size(190, 52);
             delbtn.TabIndex = 3;
             delbtn.Text = "Delete";
             delbtn.UseVisualStyleBackColor = true;
@@ -69,10 +66,9 @@
             // 
             // clearbtn
             // 
-            clearbtn.Location = new Point(172, 177);
-            clearbtn.Margin = new Padding(2);
+            clearbtn.Location = new Point(366, 336);
             clearbtn.Name = "clearbtn";
-            clearbtn.Size = new Size(90, 27);
+            clearbtn.Size = new Size(190, 52);
             clearbtn.TabIndex = 4;
             clearbtn.Text = "Clear";
             clearbtn.UseVisualStyleBackColor = true;
@@ -80,10 +76,9 @@
             // 
             // backbtn
             // 
-            backbtn.Location = new Point(290, 177);
-            backbtn.Margin = new Padding(2);
+            backbtn.Location = new Point(615, 336);
             backbtn.Name = "backbtn";
-            backbtn.Size = new Size(90, 27);
+            backbtn.Size = new Size(190, 52);
             backbtn.TabIndex = 5;
             backbtn.Text = "Back";
             backbtn.UseVisualStyleBackColor = true;
@@ -91,23 +86,25 @@
             // 
             // idtxt
             // 
-            idtxt.Location = new Point(207, 121);
+            idtxt.Location = new Point(440, 230);
+            idtxt.Margin = new Padding(7, 6, 7, 6);
             idtxt.Name = "idtxt";
-            idtxt.Size = new Size(155, 27);
+            idtxt.Size = new Size(325, 45);
             idtxt.TabIndex = 6;
             // 
             // Delete_Supplier
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(17F, 38F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(410, 243);
+            BackColor = SystemColors.ActiveCaption;
+            ClientSize = new Size(870, 462);
             Controls.Add(idtxt);
             Controls.Add(backbtn);
             Controls.Add(clearbtn);
             Controls.Add(delbtn);
             Controls.Add(label2);
             Controls.Add(label1);
-            Margin = new Padding(2);
+            Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Name = "Delete_Supplier";
             Text = "Delete";
             ResumeLayout(false);

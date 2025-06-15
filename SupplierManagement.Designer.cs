@@ -39,20 +39,21 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(94, 28);
-            label1.Margin = new Padding(2, 0, 2, 0);
+            label1.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(104, 59);
             label1.Name = "label1";
-            label1.Size = new Size(194, 20);
+            label1.Size = new Size(551, 54);
             label1.TabIndex = 0;
             label1.Text = "Supplier Management Form";
             // 
             // updatelink
             // 
+            updatelink.ActiveLinkColor = SystemColors.ActiveCaptionText;
             updatelink.AutoSize = true;
-            updatelink.Location = new Point(123, 148);
-            updatelink.Margin = new Padding(2, 0, 2, 0);
+            updatelink.LinkColor = Color.FromArgb(64, 64, 64);
+            updatelink.Location = new Point(262, 281);
             updatelink.Name = "updatelink";
-            updatelink.Size = new Size(117, 20);
+            updatelink.Size = new Size(229, 38);
             updatelink.TabIndex = 2;
             updatelink.TabStop = true;
             updatelink.Text = "Update Supplier";
@@ -60,11 +61,12 @@
             // 
             // deletelink
             // 
+            deletelink.ActiveLinkColor = Color.Black;
             deletelink.AutoSize = true;
-            deletelink.Location = new Point(123, 200);
-            deletelink.Margin = new Padding(2, 0, 2, 0);
+            deletelink.LinkColor = Color.FromArgb(64, 64, 64);
+            deletelink.Location = new Point(262, 380);
             deletelink.Name = "deletelink";
-            deletelink.Size = new Size(112, 20);
+            deletelink.Size = new Size(219, 38);
             deletelink.TabIndex = 3;
             deletelink.TabStop = true;
             deletelink.Text = "Delete Supplier";
@@ -72,11 +74,12 @@
             // 
             // searchlink
             // 
+            searchlink.ActiveLinkColor = Color.Black;
             searchlink.AutoSize = true;
-            searchlink.Location = new Point(123, 253);
-            searchlink.Margin = new Padding(2, 0, 2, 0);
+            searchlink.LinkColor = Color.FromArgb(64, 64, 64);
+            searchlink.Location = new Point(262, 480);
             searchlink.Name = "searchlink";
-            searchlink.Size = new Size(112, 20);
+            searchlink.Size = new Size(221, 38);
             searchlink.TabIndex = 4;
             searchlink.TabStop = true;
             searchlink.Text = "Search Supplier";
@@ -84,10 +87,9 @@
             // 
             // button1
             // 
-            button1.Location = new Point(85, 299);
-            button1.Margin = new Padding(2);
+            button1.Location = new Point(180, 568);
             button1.Name = "button1";
-            button1.Size = new Size(179, 27);
+            button1.Size = new Size(381, 52);
             button1.TabIndex = 5;
             button1.Text = "Back to Main Menu";
             button1.UseVisualStyleBackColor = true;
@@ -95,11 +97,12 @@
             // 
             // addsupplierlink
             // 
+            addsupplierlink.ActiveLinkColor = Color.Black;
             addsupplierlink.AutoSize = true;
-            addsupplierlink.Location = new Point(132, 98);
-            addsupplierlink.Margin = new Padding(2, 0, 2, 0);
+            addsupplierlink.LinkColor = Color.FromArgb(64, 64, 64);
+            addsupplierlink.Location = new Point(280, 185);
             addsupplierlink.Name = "addsupplierlink";
-            addsupplierlink.Size = new Size(96, 20);
+            addsupplierlink.Size = new Size(188, 38);
             addsupplierlink.TabIndex = 6;
             addsupplierlink.TabStop = true;
             addsupplierlink.Text = "Add Supplier";
@@ -107,16 +110,18 @@
             // 
             // SupplierManagement
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(17F, 38F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(356, 359);
+            BackColor = SystemColors.ActiveCaption;
+            ClientSize = new Size(756, 682);
             Controls.Add(addsupplierlink);
             Controls.Add(button1);
             Controls.Add(searchlink);
             Controls.Add(deletelink);
             Controls.Add(updatelink);
             Controls.Add(label1);
-            Margin = new Padding(2);
+            Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            ForeColor = SystemColors.ActiveCaptionText;
             Name = "SupplierManagement";
             Text = "SupplierManagementForm1";
             Load += SupplierManagement_Load;

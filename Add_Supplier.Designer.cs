@@ -45,59 +45,53 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(250, 41);
-            label1.Margin = new Padding(2, 0, 2, 0);
+            label1.Location = new Point(530, 78);
             label1.Name = "label1";
-            label1.Size = new Size(96, 20);
+            label1.Size = new Size(188, 38);
             label1.TabIndex = 0;
             label1.Text = "Add Supplier";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(113, 107);
-            label2.Margin = new Padding(2, 0, 2, 0);
+            label2.Location = new Point(240, 204);
             label2.Name = "label2";
-            label2.Size = new Size(90, 20);
+            label2.Size = new Size(180, 38);
             label2.TabIndex = 1;
             label2.Text = "Supplier ID :";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(113, 158);
-            label3.Margin = new Padding(2, 0, 2, 0);
+            label3.Location = new Point(240, 301);
             label3.Name = "label3";
-            label3.Size = new Size(56, 20);
+            label3.Size = new Size(111, 38);
             label3.TabIndex = 2;
             label3.Text = "Name :";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(113, 214);
-            label4.Margin = new Padding(2, 0, 2, 0);
+            label4.Location = new Point(240, 407);
             label4.Name = "label4";
-            label4.Size = new Size(97, 20);
+            label4.Size = new Size(196, 38);
             label4.TabIndex = 3;
             label4.Text = "Contact Info :";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(113, 275);
-            label5.Margin = new Padding(2, 0, 2, 0);
+            label5.Location = new Point(240, 523);
             label5.Name = "label5";
-            label5.Size = new Size(147, 20);
+            label5.Size = new Size(297, 38);
             label5.TabIndex = 4;
             label5.Text = "Linked Products SKU:";
             // 
             // Add
             // 
-            Add.Location = new Point(78, 377);
-            Add.Margin = new Padding(2);
+            Add.Location = new Point(167, 716);
             Add.Name = "Add";
-            Add.Size = new Size(90, 27);
+            Add.Size = new Size(190, 52);
             Add.TabIndex = 9;
             Add.Text = "Add";
             Add.UseVisualStyleBackColor = true;
@@ -105,10 +99,9 @@
             // 
             // button6
             // 
-            button6.Location = new Point(208, 377);
-            button6.Margin = new Padding(2);
+            button6.Location = new Point(442, 716);
             button6.Name = "button6";
-            button6.Size = new Size(90, 27);
+            button6.Size = new Size(190, 52);
             button6.TabIndex = 10;
             button6.Text = "Clear";
             button6.UseVisualStyleBackColor = true;
@@ -116,10 +109,9 @@
             // 
             // button7
             // 
-            button7.Location = new Point(393, 377);
-            button7.Margin = new Padding(2);
+            button7.Location = new Point(835, 716);
             button7.Name = "button7";
-            button7.Size = new Size(90, 27);
+            button7.Size = new Size(190, 52);
             button7.TabIndex = 11;
             button7.Text = "Back";
             button7.UseVisualStyleBackColor = true;
@@ -127,42 +119,39 @@
             // 
             // idtextBox
             // 
-            idtextBox.Location = new Point(278, 105);
-            idtextBox.Margin = new Padding(2);
+            idtextBox.Location = new Point(592, 199);
             idtextBox.Name = "idtextBox";
-            idtextBox.Size = new Size(172, 27);
+            idtextBox.Size = new Size(361, 45);
             idtextBox.TabIndex = 12;
             // 
             // nametextBox
             // 
-            nametextBox.Location = new Point(278, 155);
-            nametextBox.Margin = new Padding(2);
+            nametextBox.Location = new Point(592, 295);
             nametextBox.Name = "nametextBox";
-            nametextBox.Size = new Size(172, 27);
+            nametextBox.Size = new Size(361, 45);
             nametextBox.TabIndex = 13;
             nametextBox.TextChanged += nametextBox2_TextChanged;
             // 
             // contacttextBox
             // 
-            contacttextBox.Location = new Point(278, 211);
-            contacttextBox.Margin = new Padding(2);
+            contacttextBox.Location = new Point(592, 401);
             contacttextBox.Name = "contacttextBox";
-            contacttextBox.Size = new Size(172, 27);
+            contacttextBox.Size = new Size(361, 45);
             contacttextBox.TabIndex = 14;
             // 
             // linkedproductstextBox
             // 
-            linkedproductstextBox.Location = new Point(278, 273);
-            linkedproductstextBox.Margin = new Padding(2);
+            linkedproductstextBox.Location = new Point(592, 518);
             linkedproductstextBox.Name = "linkedproductstextBox";
-            linkedproductstextBox.Size = new Size(172, 27);
+            linkedproductstextBox.Size = new Size(361, 45);
             linkedproductstextBox.TabIndex = 15;
             // 
             // Add_Supplier
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(17F, 38F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(600, 470);
+            BackColor = SystemColors.ActiveCaption;
+            ClientSize = new Size(1275, 887);
             Controls.Add(linkedproductstextBox);
             Controls.Add(contacttextBox);
             Controls.Add(nametextBox);
@@ -175,7 +164,7 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
-            Margin = new Padding(2);
+            Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Name = "Add_Supplier";
             Text = "Addform";
             ResumeLayout(false);

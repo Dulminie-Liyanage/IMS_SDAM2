@@ -42,9 +42,10 @@
             // 
             lblTitle.AutoSize = true;
             lblTitle.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblTitle.Location = new Point(50, 41);
+            lblTitle.Location = new Point(62, 51);
+            lblTitle.Margin = new Padding(4, 0, 4, 0);
             lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(309, 28);
+            lblTitle.Size = new Size(371, 32);
             lblTitle.TabIndex = 1;
             lblTitle.Text = "Inventory Management System";
             lblTitle.TextAlign = ContentAlignment.MiddleLeft;
@@ -52,9 +53,10 @@
             // btnExit
             // 
             btnExit.Font = new Font("Segoe UI Black", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnExit.Location = new Point(61, 333);
+            btnExit.Location = new Point(76, 416);
+            btnExit.Margin = new Padding(4, 4, 4, 4);
             btnExit.Name = "btnExit";
-            btnExit.Size = new Size(248, 29);
+            btnExit.Size = new Size(310, 36);
             btnExit.TabIndex = 8;
             btnExit.Text = "Exit";
             btnExit.TextImageRelation = TextImageRelation.TextAboveImage;
@@ -63,10 +65,13 @@
             // 
             // linkProductMng
             // 
+            linkProductMng.ActiveLinkColor = Color.Black;
             linkProductMng.AutoSize = true;
-            linkProductMng.Location = new Point(125, 97);
+            linkProductMng.LinkColor = Color.FromArgb(64, 64, 64);
+            linkProductMng.Location = new Point(156, 121);
+            linkProductMng.Margin = new Padding(4, 0, 4, 0);
             linkProductMng.Name = "linkProductMng";
-            linkProductMng.Size = new Size(152, 20);
+            linkProductMng.Size = new Size(184, 25);
             linkProductMng.TabIndex = 9;
             linkProductMng.TabStop = true;
             linkProductMng.Text = "Product Management";
@@ -74,10 +79,13 @@
             // 
             // linkSupplierMng
             // 
+            linkSupplierMng.ActiveLinkColor = Color.Black;
             linkSupplierMng.AutoSize = true;
-            linkSupplierMng.Location = new Point(124, 135);
+            linkSupplierMng.LinkColor = Color.FromArgb(64, 64, 64);
+            linkSupplierMng.Location = new Point(155, 169);
+            linkSupplierMng.Margin = new Padding(4, 0, 4, 0);
             linkSupplierMng.Name = "linkSupplierMng";
-            linkSupplierMng.Size = new Size(156, 20);
+            linkSupplierMng.Size = new Size(187, 25);
             linkSupplierMng.TabIndex = 10;
             linkSupplierMng.TabStop = true;
             linkSupplierMng.Text = "Supplier Management";
@@ -85,10 +93,13 @@
             // 
             // linkOrderMng
             // 
+            linkOrderMng.ActiveLinkColor = Color.Black;
             linkOrderMng.AutoSize = true;
-            linkOrderMng.Location = new Point(130, 173);
+            linkOrderMng.LinkColor = Color.FromArgb(64, 64, 64);
+            linkOrderMng.Location = new Point(162, 216);
+            linkOrderMng.Margin = new Padding(4, 0, 4, 0);
             linkOrderMng.Name = "linkOrderMng";
-            linkOrderMng.Size = new Size(139, 20);
+            linkOrderMng.Size = new Size(168, 25);
             linkOrderMng.TabIndex = 11;
             linkOrderMng.TabStop = true;
             linkOrderMng.Text = "Order Management";
@@ -96,10 +107,13 @@
             // 
             // linkStockMove
             // 
+            linkStockMove.ActiveLinkColor = Color.Black;
             linkStockMove.AutoSize = true;
-            linkStockMove.Location = new Point(131, 213);
+            linkStockMove.LinkColor = Color.FromArgb(64, 64, 64);
+            linkStockMove.Location = new Point(164, 266);
+            linkStockMove.Margin = new Padding(4, 0, 4, 0);
             linkStockMove.Name = "linkStockMove";
-            linkStockMove.Size = new Size(120, 20);
+            linkStockMove.Size = new Size(146, 25);
             linkStockMove.TabIndex = 12;
             linkStockMove.TabStop = true;
             linkStockMove.Text = "Stock Movement";
@@ -108,11 +122,14 @@
             // 
             // linkStockAlert
             // 
+            linkStockAlert.ActiveLinkColor = Color.Black;
             linkStockAlert.AutoEllipsis = true;
             linkStockAlert.AutoSize = true;
-            linkStockAlert.Location = new Point(135, 250);
+            linkStockAlert.LinkColor = Color.FromArgb(64, 64, 64);
+            linkStockAlert.Location = new Point(169, 312);
+            linkStockAlert.Margin = new Padding(4, 0, 4, 0);
             linkStockAlert.Name = "linkStockAlert";
-            linkStockAlert.Size = new Size(112, 20);
+            linkStockAlert.Size = new Size(134, 25);
             linkStockAlert.TabIndex = 13;
             linkStockAlert.TabStop = true;
             linkStockAlert.Text = "Low Stock Alert";
@@ -121,10 +138,13 @@
             // 
             // linkReports
             // 
+            linkReports.ActiveLinkColor = Color.Black;
             linkReports.AutoSize = true;
-            linkReports.Location = new Point(161, 289);
+            linkReports.LinkColor = Color.FromArgb(64, 64, 64);
+            linkReports.Location = new Point(201, 361);
+            linkReports.Margin = new Padding(4, 0, 4, 0);
             linkReports.Name = "linkReports";
-            linkReports.Size = new Size(60, 20);
+            linkReports.Size = new Size(73, 25);
             linkReports.TabIndex = 14;
             linkReports.TabStop = true;
             linkReports.Text = "Reports";
@@ -132,10 +152,10 @@
             // 
             // Main_Menu
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ButtonShadow;
-            ClientSize = new Size(401, 392);
+            BackColor = SystemColors.ActiveCaption;
+            ClientSize = new Size(501, 490);
             Controls.Add(linkReports);
             Controls.Add(linkStockAlert);
             Controls.Add(linkStockMove);
@@ -144,6 +164,7 @@
             Controls.Add(linkProductMng);
             Controls.Add(btnExit);
             Controls.Add(lblTitle);
+            Margin = new Padding(4, 4, 4, 4);
             Name = "Main_Menu";
             Text = "Main_Menu";
             ResumeLayout(false);
