@@ -89,9 +89,9 @@
             label5.Location = new Point(84, 265);
             label5.Margin = new Padding(2, 0, 2, 0);
             label5.Name = "label5";
-            label5.Size = new Size(114, 20);
+            label5.Size = new Size(145, 20);
             label5.TabIndex = 4;
-            label5.Text = "Linked Product :";
+            label5.Text = "Linked Product SKU :";
             // 
             // textid
             // 
@@ -169,7 +169,7 @@
             loadbtn.UseVisualStyleBackColor = true;
             loadbtn.Click += button4_Click;
             // 
-            // Update_Form
+            // Update_Supplier
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -188,7 +188,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Margin = new Padding(2);
-            Name = "Update_Form";
+            Name = "Update_Supplier";
             Text = "Update_Form";
             ResumeLayout(false);
             PerformLayout();

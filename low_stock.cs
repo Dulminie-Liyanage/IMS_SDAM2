@@ -44,5 +44,12 @@ namespace IMS
                 dgvStock.DataSource = null;
             }
         }
-}
+
+        private void backbtn_Click(object sender, EventArgs e)
+        {
+            Main_Menu main_Menu = new Main_Menu();
+            main_Menu.Show();
+            this.Close(); 
+        }
+    }
 }

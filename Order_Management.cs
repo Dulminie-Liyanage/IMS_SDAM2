@@ -47,9 +47,9 @@ namespace IMS
 
         private void backtomainmenuBtn_Click(object sender, EventArgs e)
         {
-            //this.Hide();
-            //Main_Menu main_Menu = new Main_Menu();
-            //main_Menu.Show();
+            this.Hide();
+            Main_Menu main_Menu = new Main_Menu();
+            main_Menu.Show();
         }
 
         private void Order_Management_Load(object sender, EventArgs e)

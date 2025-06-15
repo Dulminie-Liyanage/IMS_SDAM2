@@ -36,6 +36,7 @@
             Name = new DataGridViewTextBoxColumn();
             Quantity = new DataGridViewTextBoxColumn();
             lblLimit = new Label();
+            backbtn = new Button();
             ((System.ComponentModel.ISupportInitialize)numLimit).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgvStock).BeginInit();
             SuspendLayout();
@@ -54,7 +55,7 @@
             // 
             btnCheck.BackColor = SystemColors.Info;
             btnCheck.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            btnCheck.Location = new Point(422, 115);
+            btnCheck.Location = new Point(388, 113);
             btnCheck.Name = "btnCheck";
             btnCheck.Size = new Size(94, 29);
             btnCheck.TabIndex = 7;
@@ -64,7 +65,7 @@
             // 
             // numLimit
             // 
-            numLimit.Location = new Point(341, 115);
+            numLimit.Location = new Point(315, 115);
             numLimit.Name = "numLimit";
             numLimit.Size = new Size(52, 27);
             numLimit.TabIndex = 8;
@@ -106,18 +107,31 @@
             // lblLimit
             // 
             lblLimit.AutoSize = true;
-            lblLimit.Location = new Point(52, 115);
+            lblLimit.Location = new Point(26, 115);
             lblLimit.Name = "lblLimit";
             lblLimit.Size = new Size(261, 20);
             lblLimit.TabIndex = 10;
             lblLimit.Text = "Show products with quantity less than:";
+            // 
+            // backbtn
+            // 
+            backbtn.BackColor = SystemColors.Info;
+            backbtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            backbtn.Location = new Point(488, 113);
+            backbtn.Name = "backbtn";
+            backbtn.Size = new Size(94, 29);
+            backbtn.TabIndex = 11;
+            backbtn.Text = "Back";
+            backbtn.UseVisualStyleBackColor = false;
+            backbtn.Click += backbtn_Click;
             // 
             // low_stock
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
-            ClientSize = new Size(551, 311);
+            ClientSize = new Size(609, 311);
+            Controls.Add(backbtn);
             Controls.Add(lblLimit);
             Controls.Add(dgvStock);
             Controls.Add(numLimit);
@@ -141,5 +155,6 @@
         private DataGridViewTextBoxColumn Name;
         private DataGridViewTextBoxColumn Quantity;
         private Label lblLimit;
+        private Button backbtn;
     }
 }

@@ -23,7 +23,8 @@ namespace IMS
             string result = Supplier_Controller.UpdateSupplier(
                 textid.Text,
                 txtname.Text,
-                textcontact.Text
+                textcontact.Text,
+                txtproduct.Text           
                 );
             MessageBox.Show(result);
         }
@@ -64,6 +65,7 @@ namespace IMS
             {
                 MessageBox.Show("Supplier not found.");
             }
+
         }
     }
 }
