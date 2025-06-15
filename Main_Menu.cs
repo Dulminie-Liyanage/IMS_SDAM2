@@ -44,5 +44,17 @@ namespace IMS
             SupplierManagement supplierManagement = new SupplierManagement();
             supplierManagement.Show();
         }
+
+        private void linkOrderMng_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            Order_Management order_Management = new Order_Management();
+            order_Management.Show();
+        }
+
+        private void linkStockMove_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
     }
 }

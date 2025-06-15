@@ -92,6 +92,7 @@
             linkOrderMng.TabIndex = 11;
             linkOrderMng.TabStop = true;
             linkOrderMng.Text = "Order Management";
+            linkOrderMng.LinkClicked += linkOrderMng_LinkClicked;
             // 
             // linkStockMove
             // 
@@ -103,6 +104,7 @@
             linkStockMove.TabStop = true;
             linkStockMove.Text = "Stock Movement";
             linkStockMove.UseMnemonic = false;
+            linkStockMove.LinkClicked += linkStockMove_LinkClicked;
             // 
             // linkStockAlert
             // 

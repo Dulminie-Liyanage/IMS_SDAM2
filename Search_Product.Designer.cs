@@ -153,7 +153,6 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Margin = new Padding(4);
-            Name = "Search_Product";
             Text = "Search_Product";
             Load += Search_Product_Load;
             ((System.ComponentModel.ISupportInitialize)dgvSearchResults).EndInit();
