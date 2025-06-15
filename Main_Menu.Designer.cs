@@ -42,7 +42,7 @@
             // 
             lblTitle.AutoSize = true;
             lblTitle.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblTitle.Location = new Point(50, 41);
+            lblTitle.Location = new Point(58, 58);
             lblTitle.Name = "lblTitle";
             lblTitle.Size = new Size(309, 28);
             lblTitle.TabIndex = 1;
@@ -52,7 +52,7 @@
             // btnExit
             // 
             btnExit.Font = new Font("Segoe UI Black", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnExit.Location = new Point(61, 333);
+            btnExit.Location = new Point(79, 351);
             btnExit.Name = "btnExit";
             btnExit.Size = new Size(248, 29);
             btnExit.TabIndex = 8;
@@ -65,10 +65,11 @@
             // 
             linkProductMng.ActiveLinkColor = Color.Black;
             linkProductMng.AutoSize = true;
+            linkProductMng.Font = new Font("Segoe UI", 11F);
             linkProductMng.LinkColor = Color.FromArgb(64, 64, 64);
-            linkProductMng.Location = new Point(125, 97);
+            linkProductMng.Location = new Point(112, 110);
             linkProductMng.Name = "linkProductMng";
-            linkProductMng.Size = new Size(152, 20);
+            linkProductMng.Size = new Size(195, 25);
             linkProductMng.TabIndex = 9;
             linkProductMng.TabStop = true;
             linkProductMng.Text = "Product Management";
@@ -78,10 +79,11 @@
             // 
             linkSupplierMng.ActiveLinkColor = Color.Black;
             linkSupplierMng.AutoSize = true;
+            linkSupplierMng.Font = new Font("Segoe UI", 11F);
             linkSupplierMng.LinkColor = Color.FromArgb(64, 64, 64);
-            linkSupplierMng.Location = new Point(124, 135);
+            linkSupplierMng.Location = new Point(111, 148);
             linkSupplierMng.Name = "linkSupplierMng";
-            linkSupplierMng.Size = new Size(156, 20);
+            linkSupplierMng.Size = new Size(199, 25);
             linkSupplierMng.TabIndex = 10;
             linkSupplierMng.TabStop = true;
             linkSupplierMng.Text = "Supplier Management";
@@ -91,10 +93,11 @@
             // 
             linkOrderMng.ActiveLinkColor = Color.Black;
             linkOrderMng.AutoSize = true;
+            linkOrderMng.Font = new Font("Segoe UI", 11F);
             linkOrderMng.LinkColor = Color.FromArgb(64, 64, 64);
-            linkOrderMng.Location = new Point(130, 173);
+            linkOrderMng.Location = new Point(117, 186);
             linkOrderMng.Name = "linkOrderMng";
-            linkOrderMng.Size = new Size(139, 20);
+            linkOrderMng.Size = new Size(178, 25);
             linkOrderMng.TabIndex = 11;
             linkOrderMng.TabStop = true;
             linkOrderMng.Text = "Order Management";
@@ -104,10 +107,11 @@
             // 
             linkStockMove.ActiveLinkColor = Color.Black;
             linkStockMove.AutoSize = true;
+            linkStockMove.Font = new Font("Segoe UI", 11F);
             linkStockMove.LinkColor = Color.FromArgb(64, 64, 64);
-            linkStockMove.Location = new Point(131, 213);
+            linkStockMove.Location = new Point(127, 226);
             linkStockMove.Name = "linkStockMove";
-            linkStockMove.Size = new Size(120, 20);
+            linkStockMove.Size = new Size(151, 25);
             linkStockMove.TabIndex = 12;
             linkStockMove.TabStop = true;
             linkStockMove.Text = "Stock Movement";
@@ -118,10 +122,11 @@
             // 
             linkReports.ActiveLinkColor = Color.Black;
             linkReports.AutoSize = true;
+            linkReports.Font = new Font("Segoe UI", 11F);
             linkReports.LinkColor = Color.FromArgb(64, 64, 64);
-            linkReports.Location = new Point(161, 289);
+            linkReports.Location = new Point(158, 302);
             linkReports.Name = "linkReports";
-            linkReports.Size = new Size(60, 20);
+            linkReports.Size = new Size(75, 25);
             linkReports.TabIndex = 14;
             linkReports.TabStop = true;
             linkReports.Text = "Reports";
@@ -132,10 +137,11 @@
             linkStockAlert.ActiveLinkColor = Color.Black;
             linkStockAlert.AutoEllipsis = true;
             linkStockAlert.AutoSize = true;
+            linkStockAlert.Font = new Font("Segoe UI", 11F);
             linkStockAlert.LinkColor = Color.FromArgb(64, 64, 64);
-            linkStockAlert.Location = new Point(135, 250);
+            linkStockAlert.Location = new Point(131, 263);
             linkStockAlert.Name = "linkStockAlert";
-            linkStockAlert.Size = new Size(112, 20);
+            linkStockAlert.Size = new Size(140, 25);
             linkStockAlert.TabIndex = 13;
             linkStockAlert.TabStop = true;
             linkStockAlert.Text = "Low Stock Alert";
@@ -147,7 +153,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
-            ClientSize = new Size(401, 392);
+            ClientSize = new Size(431, 434);
             Controls.Add(linkReports);
             Controls.Add(linkStockAlert);
             Controls.Add(linkStockMove);
@@ -158,6 +164,7 @@
             Controls.Add(lblTitle);
             Name = "Main_Menu";
             Text = "Main_Menu";
+            Load += Main_Menu_Load;
             ResumeLayout(false);
             PerformLayout();
         }

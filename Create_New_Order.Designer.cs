@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            CreateNewOrder = new Button();
             Produtlabel = new Label();
             ProductNametextBox = new TextBox();
             OrderIDtextBox = new TextBox();
@@ -44,17 +43,8 @@
             BackBtn = new Button();
             Datelabel = new Label();
             dateTimePicker1 = new DateTimePicker();
+            label1 = new Label();
             SuspendLayout();
-            // 
-            // CreateNewOrder
-            // 
-            CreateNewOrder.Location = new Point(398, 18);
-            CreateNewOrder.Margin = new Padding(5, 5, 5, 5);
-            CreateNewOrder.Name = "CreateNewOrder";
-            CreateNewOrder.Size = new Size(396, 71);
-            CreateNewOrder.TabIndex = 0;
-            CreateNewOrder.Text = "Create New Order";
-            CreateNewOrder.UseVisualStyleBackColor = true;
             // 
             // Produtlabel
             // 
@@ -62,25 +52,25 @@
             Produtlabel.Location = new Point(61, 254);
             Produtlabel.Margin = new Padding(5, 0, 5, 0);
             Produtlabel.Name = "Produtlabel";
-            Produtlabel.Size = new Size(222, 38);
+            Produtlabel.Size = new Size(193, 32);
             Produtlabel.TabIndex = 1;
             Produtlabel.Text = "Product Name :";
             // 
             // ProductNametextBox
             // 
             ProductNametextBox.Location = new Point(343, 249);
-            ProductNametextBox.Margin = new Padding(5, 5, 5, 5);
+            ProductNametextBox.Margin = new Padding(5);
             ProductNametextBox.Name = "ProductNametextBox";
-            ProductNametextBox.Size = new Size(448, 45);
+            ProductNametextBox.Size = new Size(448, 39);
             ProductNametextBox.TabIndex = 2;
             ProductNametextBox.TextChanged += textBox1_TextChanged;
             // 
             // OrderIDtextBox
             // 
             OrderIDtextBox.Location = new Point(343, 146);
-            OrderIDtextBox.Margin = new Padding(5, 5, 5, 5);
+            OrderIDtextBox.Margin = new Padding(5);
             OrderIDtextBox.Name = "OrderIDtextBox";
-            OrderIDtextBox.Size = new Size(448, 45);
+            OrderIDtextBox.Size = new Size(448, 39);
             OrderIDtextBox.TabIndex = 4;
             OrderIDtextBox.TextChanged += OrderIDtextBox_TextChanged;
             // 
@@ -90,16 +80,16 @@
             Supplier.Location = new Point(61, 362);
             Supplier.Margin = new Padding(5, 0, 5, 0);
             Supplier.Name = "Supplier";
-            Supplier.Size = new Size(142, 38);
+            Supplier.Size = new Size(123, 32);
             Supplier.TabIndex = 5;
             Supplier.Text = "Supplier :";
             // 
             // SuppliertextBox
             // 
             SuppliertextBox.Location = new Point(343, 357);
-            SuppliertextBox.Margin = new Padding(5, 5, 5, 5);
+            SuppliertextBox.Margin = new Padding(5);
             SuppliertextBox.Name = "SuppliertextBox";
-            SuppliertextBox.Size = new Size(448, 45);
+            SuppliertextBox.Size = new Size(448, 39);
             SuppliertextBox.TabIndex = 6;
             // 
             // Quantity
@@ -108,16 +98,16 @@
             Quantity.Location = new Point(61, 468);
             Quantity.Margin = new Padding(5, 0, 5, 0);
             Quantity.Name = "Quantity";
-            Quantity.Size = new Size(148, 38);
+            Quantity.Size = new Size(127, 32);
             Quantity.TabIndex = 7;
             Quantity.Text = "Quantity :";
             // 
             // QuantitytextBox
             // 
             QuantitytextBox.Location = new Point(343, 464);
-            QuantitytextBox.Margin = new Padding(5, 5, 5, 5);
+            QuantitytextBox.Margin = new Padding(5);
             QuantitytextBox.Name = "QuantitytextBox";
-            QuantitytextBox.Size = new Size(318, 45);
+            QuantitytextBox.Size = new Size(318, 39);
             QuantitytextBox.TabIndex = 8;
             // 
             // Status
@@ -126,7 +116,7 @@
             Status.Location = new Point(78, 572);
             Status.Margin = new Padding(5, 0, 5, 0);
             Status.Name = "Status";
-            Status.Size = new Size(114, 38);
+            Status.Size = new Size(97, 32);
             Status.TabIndex = 9;
             Status.Text = "Status :";
             Status.Click += label1_Click_1;
@@ -134,15 +124,15 @@
             // StatustextBox
             // 
             StatustextBox.Location = new Point(343, 564);
-            StatustextBox.Margin = new Padding(5, 5, 5, 5);
+            StatustextBox.Margin = new Padding(5);
             StatustextBox.Name = "StatustextBox";
-            StatustextBox.Size = new Size(318, 45);
+            StatustextBox.Size = new Size(318, 39);
             StatustextBox.TabIndex = 10;
             // 
             // CreateBtn
             // 
             CreateBtn.Location = new Point(114, 821);
-            CreateBtn.Margin = new Padding(5, 5, 5, 5);
+            CreateBtn.Margin = new Padding(5);
             CreateBtn.Name = "CreateBtn";
             CreateBtn.Size = new Size(190, 68);
             CreateBtn.TabIndex = 11;
@@ -153,7 +143,7 @@
             // ClearBtn
             // 
             ClearBtn.Location = new Point(486, 824);
-            ClearBtn.Margin = new Padding(5, 5, 5, 5);
+            ClearBtn.Margin = new Padding(5);
             ClearBtn.Name = "ClearBtn";
             ClearBtn.Size = new Size(178, 61);
             ClearBtn.TabIndex = 15;
@@ -167,7 +157,7 @@
             SKUlabel.Location = new Point(65, 150);
             SKUlabel.Margin = new Padding(5, 0, 5, 0);
             SKUlabel.Name = "SKUlabel";
-            SKUlabel.Size = new Size(170, 38);
+            SKUlabel.Size = new Size(147, 32);
             SKUlabel.TabIndex = 16;
             SKUlabel.Text = "Order SKU :";
             SKUlabel.Click += SKUlabel_Click;
@@ -175,7 +165,7 @@
             // BackBtn
             // 
             BackBtn.Location = new Point(860, 828);
-            BackBtn.Margin = new Padding(5, 5, 5, 5);
+            BackBtn.Margin = new Padding(5);
             BackBtn.Name = "BackBtn";
             BackBtn.Size = new Size(199, 61);
             BackBtn.TabIndex = 17;
@@ -189,24 +179,34 @@
             Datelabel.Location = new Point(78, 681);
             Datelabel.Margin = new Padding(5, 0, 5, 0);
             Datelabel.Name = "Datelabel";
-            Datelabel.Size = new Size(95, 38);
+            Datelabel.Size = new Size(81, 32);
             Datelabel.TabIndex = 18;
             Datelabel.Text = "Date :";
             // 
             // dateTimePicker1
             // 
             dateTimePicker1.Location = new Point(343, 681);
-            dateTimePicker1.Margin = new Padding(5, 5, 5, 5);
+            dateTimePicker1.Margin = new Padding(5);
             dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(507, 45);
+            dateTimePicker1.Size = new Size(507, 39);
             dateTimePicker1.TabIndex = 20;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(259, 58);
+            label1.Name = "label1";
+            label1.Size = new Size(218, 32);
+            label1.TabIndex = 21;
+            label1.Text = "Create New Order";
             // 
             // Create_New_Order
             // 
-            AutoScaleDimensions = new SizeF(17F, 38F);
+            AutoScaleDimensions = new SizeF(14F, 31F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(1203, 922);
+            Controls.Add(label1);
             Controls.Add(dateTimePicker1);
             Controls.Add(Datelabel);
             Controls.Add(BackBtn);
@@ -222,9 +222,8 @@
             Controls.Add(OrderIDtextBox);
             Controls.Add(ProductNametextBox);
             Controls.Add(Produtlabel);
-            Controls.Add(CreateNewOrder);
             Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Margin = new Padding(5, 5, 5, 5);
+            Margin = new Padding(5);
             Name = "Create_New_Order";
             Text = "Create_New_Order";
             Load += Form1_Load;
@@ -233,8 +232,6 @@
         }
 
         #endregion
-
-        private Button CreateNewOrder;
         private Label Produtlabel;
         private TextBox ProductNametextBox;
         private TextBox OrderIDtextBox;
@@ -250,5 +247,6 @@
         private Button BackBtn;
         private Label Datelabel;
         private DateTimePicker dateTimePicker1;
+        private Label label1;
     }
 }

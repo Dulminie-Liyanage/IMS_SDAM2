@@ -100,5 +100,10 @@ namespace IMS
         {
 
         }
+
+        private void Main_Menu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
